@@ -2,7 +2,7 @@
 
 The first task is the creation of a search GUI, which should be includable with the root angular component of a module. This root angular component should have an input that configures which filters can be added by the user.
 
-![/Users/system/Desktop/0829-kwa-app/docs/design specification/1. phase - findbuch/suchformular.png](/Users/system/Desktop/0829-kwa-app/docs/design specification/1. phase - findbuch/suchformular.png)
+![./suchformular.png](./suchformular.png)
 
 More details (that have to be documented as an enhancement issue):
 
