@@ -1,18 +1,36 @@
-## Findbuch design specification - Work in progress!!!
+## Findbuch design specification Phase 1
 
-The first task is the creation of a search GUI, which should be includable with the root angular component of a module. This root angular component should have an input that configures which filters can be added by the user.
+### .1 Presentation of the Finddbuch as dynamic content queried from Knora
+
+- The information of the findbuch is queried directly from Knora
+- If the input field is empty all resources are shown. (If nothing is entered in the search input field, the first 25 results are loaded) if the user scrolls down to the 25th result, the next 25 results are loaded
+
+### .2 Search form
+
+- From the search form a sparql query is generated
+- One functionality of the search form is that the search results can be queried
+
+### .2.1 filter criteria
+
+- the search field contains one empty filter row at first
+- the search row allows to enter a search in a certain property, choosing an operator and typing of the value that has to be searched for
+- Additional filter criteria can be added
+- If there is more than one filter criteria, all criterias are linked with an AND
+
+### .2.2
+
+- Next to the filter criteria the search form enables the user to choose a sorting option of the search results
+- You can sort by Lemma and Erstdruckdatum
+
+
+### technological remarks
+
+- the output will be an angular module
+- this module can be included in an Angular project with the selector of the root component of the module
+- the root component of this module has an input that allows the developer to configure aspects of the search, for instance
+	- which properties can be searched for
+	- Which fields / properties should be displayed in the result entries
+	- Which sorting options exist
 
 ![./suchformular.png](./suchformular.png)
 
-More details (that have to be documented as an enhancement issue):
-
-- If nothing is entered in the search input field, the first 25 results can be seen
-- if the user scrolls down to the 25th result, the next 25 results are loaded
-- Die Einträge sind nach Lemma sortiert, also nach dem Titel des Textkonzepts.
-- Das Suchformular erlaubt eine Einschränkung der angezeigten Datensätze, sowie eine alternative Sortierung
-- Es können weitere Filterzeilen eingefügt werden. Mehrere Kriterien werden immer mit UND kombiniert.
-- Es ist zu berücksichtigen, dass in einer späteren Phase weitere Suchkriterien dazukommen könnten. (z.B. Datierung der Manuskripte, Stadt/Land des Erstdrucks oder des Aufbewahrungsortes)
-- Neben den Filterkriterien erlaubt das Suchformular die Auswahl der Sortierung. Es sind folgende Sortierungen möglich:
-	- Nach Lemma
-	- Dach Erstdruckdatum
-- The result component should be configurable via an input as well, which defines which fields should be displayd in the results.
