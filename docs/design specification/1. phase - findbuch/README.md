@@ -8,7 +8,7 @@
 ### .2 Search form
 
 - From the search form a sparql query is generated
-- One functionality of the search form is that the search results can be queried
+- One functionality of the search form is that a link can be generated that saves the current chosen filters and values etc, so that the search can be reperformed
 
 ### .2.1 filter criteria
 
