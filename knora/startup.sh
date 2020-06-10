@@ -1,0 +1,13 @@
+export KNORA_GRAPHDB_IMAGE=daschswiss/knora-graphdb-free:v12.0.0
+export KNORA_GDB_HOME_DIR=./graphdb-home
+export KNORA_GDB_IMPORT_DIR=./graphdb-import
+export KNORA_GDB_HEAP_SIZE=3G
+export KNORA_GDB_LICENSE=./graphdb-license/GRAPHDB_SE.license
+export KNORA_SIPI_IMAGE=daschswiss/knora-sipi:v12.0.0
+export LOCAL_HOME=./sipi-local-home
+export KNORA_API_IMAGE=daschswiss/knora-api:v12.0.0-20-ge80bf52
+export KNORA_WEBAPI_DB_CONNECTIONS=5
+export KNORA_GDB_TYPE=graphdb-free
+export KNORA_GRAPHDB_REPOSITORY_NAME=knora-test
+export KNORA_SALSAH1_IMAGE=daschswiss/knora-salsah1:v12.0.0
+docker-compose up

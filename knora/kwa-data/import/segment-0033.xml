@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1# ./pCAFE-kwa.xsd"><kwa:Magazine id="d-56">
+    <knora:label>WBl: Die weissen Blätter</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Die weissen Blätter</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">WBl</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Eine Monatsschrift</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Die weissen Blätter</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-57">
+    <knora:label>Mae: März</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">März</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Mae</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Wochenschrift für deutsche Kultur</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">März</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-50">
+    <knora:label>Zu: Die Zukunft</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Die Zukunft</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Zu</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Die Zukunft</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-51">
+    <knora:label>SimplK: Simplicissimus-Kalender für 1912</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Simplicissimus-Kalender für 1912</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">SimplK</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Simplicissimus-Kalender für 1912</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-102">
+    <knora:label>OmH: O mein Heimatland</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">O mein Heimatland</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">OmH</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Ein Kalender fürs Schweizervolk</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">O mein Heimatland</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-49">
+    <knora:label>Bb: Das Blaubuch</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Das Blaubuch</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Bb</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Wochenschrift für öffentliches Leben, Literatur und Kunst</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Das Blaubuch</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-47">
+    <knora:label>KK: Kunst und Künstler</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Kunst und Künstler</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">KK</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Illustrierte Monatsschrift für bildende Kunst und Kunstgewerbe</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Kunst und Künstler</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-41">
+    <knora:label>SB: Die Schaubühne</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Die Schaubühne</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">SB</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Die Schaubühne</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-42">
+    <knora:label>Ark: Arkadia</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Arkadia</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Ark</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Ein Jahrbuch für Dichtkunst</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Arkadia</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-40">
+    <knora:label>Dalm: Deutscher Almanach auf das Jahr 1907</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Deutscher Almanach auf das Jahr 1907</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Dalm</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Deutscher Almanach auf das Jahr 1907</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-110">
+    <knora:label>Schue: Der Schünemann-Monat</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Der Schünemann-Monat</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Schue</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Deutsche Blätter für Kunst und Leben</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Der Schünemann-Monat</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-114">
+    <knora:label>Wk: Das Werk</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Das Werk</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Wk</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Schweizerische Zeitschrift für Baukunst, Gewerbe, Malerei und Plastik. Offizielles Organ des Bundes Schweizer Architekten (B. S. A.) und des Schweizerischen Werkbundes (S. W. B.)</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Das Werk</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-111">
+    <knora:label>Rol: Roland</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Roland</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Rol</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Gesellschaft, Kunst, Finanz</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Roland</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-70">
+    <knora:label>Bwu: Der Bücherwurm</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Der Bücherwurm</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Bwu</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Eine Monatsschrift für Bücherfreunde</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Der Bücherwurm</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-120">
+    <knora:label>MagZ: Magazin Z</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Magazin Z</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">MagZ</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Magazin Z</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-121">
+    <knora:label>BuBu: Das Bunte Buch</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Das Bunte Buch</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">BuBu</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Das Bunte Buch</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-122">
+    <knora:label>VjT: Vom jüngsten Tag, 1. Aufl.</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Vom jüngsten Tag, 1. Aufl.</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">VjT</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Ein Almanach neuer Dichtung</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Vom jüngsten Tag, 1. Aufl.</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-123">
+    <knora:label>BBM: Blätter der Bücherstube am Museum</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Blätter der Bücherstube am Museum</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">BBM</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Blätter der Bücherstube am Museum</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-69">
+    <knora:label>Ein: Der Einzelne</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Der Einzelne</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Ein</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Halbmonatsschrift für Politik, Wirtschaft, Kunst</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Der Einzelne</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-67">
+    <knora:label>Ju: Jugend</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Jugend</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Ju</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Illustrierte Wochenschrift für Kunst und Leben</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Jugend</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-68">
+    <knora:label>Sat: Saturn</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Saturn</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Sat</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Eine Monatsschrift</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Saturn</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-65">
+    <knora:label>VuP: Vers und Prosa</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Vers und Prosa</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">VuP</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Vers und Prosa</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-66">
+    <knora:label>Bima: Der Bildermann</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Der Bildermann</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Bima</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Steinzeichnungen fürs deutsche Volk</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Der Bildermann</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-63">
+    <knora:label>Pan: Pan</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Pan</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Pan</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Wochenschrift</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Pan</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-64">
+    <knora:label>Weil: Wieland</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Wieland</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Weil</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Wieland</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-91">
+    <knora:label>VjblVdB: Vierteljahresblätter des V.d.B. (Volksverband der Bücherfreunde)</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Vierteljahresblätter des V.d.B. (Volksverband der Bücherfreunde)</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">VjblVdB</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Vierteljahresblätter des V.d.B. (Volksverband der Bücherfreunde)</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-83">
+    <knora:label>ZeB: Die Zeit (Bern)</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Die Zeit (Bern)</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">ZeB</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Schweizerische Blätter für Kunst, Schriftentum und Leben</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Die Zeit (Bern)</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-84">
+    <knora:label>Lz: Der Lesezirkel</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Der Lesezirkel</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Lz</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Der Lesezirkel</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-82">
+    <knora:label>Mo: Morgen</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Morgen</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Mo</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Wochenschrift für deutsche Kultur</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Morgen</kwa:hasTitle>
+</kwa:Magazine><kwa:textconcept id="tc-1170">
+<knora:label>Textconcept 1170: Der Engel</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1170</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Engel</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1173">
+<knora:label>Textconcept 1173: Titus</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1173</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Titus</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1171">
+<knora:label>Textconcept 1171: Brief an Edith</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1171</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Brief an Edith</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1178">
+<knora:label>Textconcept 1178: Das seltsame Mädchen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1178</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das seltsame Mädchen</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1175">
+<knora:label>Textconcept 1175: Von einigen Dichtern und einer tugendhaften Frau</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1175</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Von einigen Dichtern und einer tugendhaften Frau</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1181">
+<knora:label>Textconcept 1181: Ludwig. Eine Rezension</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1181</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ludwig. Eine Rezension</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1180">
+<knora:label>Textconcept 1180: Zückerchen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1180</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Zückerchen</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1182">
+<knora:label>Textconcept 1182: Die Schöne und der Treue</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1182</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Schöne und der Treue</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1179">
+<knora:label>Textconcept 1179: Das Kind</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1179</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das Kind</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1152">
+<knora:label>Textconcept 1152: Wladimir</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1152</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Wladimir</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2485">
+<knora:label>Textconcept 2485: Sie war unter uns gesagt eine Spionin …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2485</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Sie war unter uns gesagt eine Spionin …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1156">
+<knora:label>Textconcept 1156: Der Idiot von Dostojewski</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1156</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Idiot von Dostojewski</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1155">
+<knora:label>Textconcept 1155: Genf</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1155</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Genf</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1154">
+<knora:label>Textconcept 1154: Manuel</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1154</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Manuel</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1153">
+<knora:label>Textconcept 1153: Sonntagsspaziergang</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1153</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Sonntagsspaziergang</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1163">
+<knora:label>Textconcept 1163: Schaufenster</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1163</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Schaufenster</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1162">
+<knora:label>Textconcept 1162: Ibsens Nora oder die Rösti</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1162</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ibsens Nora oder die Rösti</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1161">
+<knora:label>Textconcept 1161: Kurt</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1161</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Kurt</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1167">
+<knora:label>Textconcept 1167: Lehrer und Dienstmann</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1167</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Lehrer und Dienstmann</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1159">
+<knora:label>Textconcept 1159: Pferd und Bär</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1159</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Pferd und Bär</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1157">
+<knora:label>Textconcept 1157: Pariser Blätter</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1157</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Pariser Blätter</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2470">
+<knora:label>Textconcept 2470: Im Anfang tat er …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2470</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Im Anfang tat er …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2471">
+<knora:label>Textconcept 2471: Was siehst …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2471</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Was siehst …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2469">
+<knora:label>Textconcept 2469: Die Jesusjünger die da …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2469</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Jesusjünger die da …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1111">
+<knora:label>Textconcept 1111: Fritz</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1111</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Fritz</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1110">
+<knora:label>Textconcept 1110: Na also</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1110</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Na also</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1105">
+<knora:label>Textconcept 1105: Niemand</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1105</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Niemand</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1104">
+<knora:label>Textconcept 1104: Lampe, Papier und Handschuhe</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1104</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Lampe, Papier und Handschuhe</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1103">
+<knora:label>Textconcept 1103: Das Ende der Welt</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1103</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das Ende der Welt</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1102">
+<knora:label>Textconcept 1102: So! Dich hab ich</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1102</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">So! Dich hab ich</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1109">
+<knora:label>Textconcept 1109: Basta</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1109</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Basta</kwa:hasTitle>
+</kwa:textconcept></knora:resources>

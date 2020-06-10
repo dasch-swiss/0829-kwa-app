@@ -1,0 +1,5 @@
+#ignore 
+graphdb-home/*
+graphdb-import/*
+graphdb-license/*
+knora-tmp/*

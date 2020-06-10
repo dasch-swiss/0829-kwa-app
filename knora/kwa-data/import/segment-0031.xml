@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1# ./pCAFE-kwa.xsd"><kwa:Magazine id="d-220">
+    <knora:label>Roz: Rozvoj</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Rozvoj</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Roz</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Rozvoj</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-222">
+    <knora:label>IB: Insel-Buch 1902</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Insel-Buch 1902</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">IB</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Insel-Buch 1902</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-239">
+    <knora:label>AlmE: Almanach 1919 der Vereinigten Stadttheater Essens</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Almanach 1919 der Vereinigten Stadttheater Essens</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">AlmE</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Almanach 1919 der Vereinigten Stadttheater Essens</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-232">
+    <knora:label>OFA: Orell-Fuessli-Almanach</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Orell-Fuessli-Almanach</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">OFA</kwa:hasShortCode>
+    
+    <kwa:hasTitle knoraType="richtext_value">Orell-Fuessli-Almanach</kwa:hasTitle>
+</kwa:Magazine><kwa:textconcept id="tc-1358">
+<knora:label>Textconcept 1358: Das Ruheplätzchen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1358</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das Ruheplätzchen</kwa:hasTitle>
+</kwa:textconcept><kwa:textmanifest id="m-Dam-1920-05-01">
+		<knora:label>Manifest Dam-1920-05-01: Die Dame 1920-05-01</knora:label>                       
+		<kwa:hasKwaManifestId knoraType="richtext_value">m-Dam-1920-05-01</kwa:hasKwaManifestId>
+		<kwa:hasTitle knoraType="richtext_value">Die Dame 1920-05-01</kwa:hasTitle>
+		<kwa:textresource-fulltext knoraType="richtext_value">Die Dame 1920-05-01</kwa:textresource-fulltext>
+</kwa:textmanifest><kwa:textexpression id="te-p-935">
+    <knora:label>te-p-1: Das Ruheplätzchen</knora:label>
+    <kwa:hasIncipit knoraType="richtext_value">Geh’ nur dorthin, es ist dort alles / ganz leicht</kwa:hasIncipit>
+    <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-935</kwa:hasKwaExpressionId>
+    <kwa:hasTitle knoraType="richtext_value">Das Ruheplätzchen</kwa:hasTitle>
+    <kwa:is-textconcept-instance>
+    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1358"/>
+    </kwa:is-textconcept-instance>
+    <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
+    <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
+    <kwa:standoffResourceTextResourceReference>
+    	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Dam-1920-05-01"/>
+    </kwa:standoffResourceTextResourceReference>
+</kwa:textexpression><kwa:Magazine id="d-241">
+    <knora:label>VjT: Vom jüngsten Tag, 2., veränderte Aufl.</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Vom jüngsten Tag, 2., veränderte Aufl.</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">VjT</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Ein Almanach neuer Dichtung</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Vom jüngsten Tag, 2., veränderte Aufl.</kwa:hasTitle>
+</kwa:Magazine><kwa:Magazine id="d-257">
+    <knora:label>Heim(D): Die Heimstatt</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Die Heimstatt</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Heim(D)</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Monatsheft für Literatur, Kunst und Wissenschaft. Beilage zum Wolfenbütteler Kreisblatt</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Die Heimstatt</kwa:hasTitle>
+</kwa:Magazine><kwa:textexpression id="te-p-905">
+    <knora:label>te-p-1: Kleist in Paris</knora:label>
+    <kwa:hasIncipit knoraType="richtext_value">Im April 1801 reiste Kleist nach Paris.</kwa:hasIncipit>
+    <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-905</kwa:hasKwaExpressionId>
+    <kwa:hasTitle knoraType="richtext_value">Kleist in Paris</kwa:hasTitle>
+    <kwa:is-textconcept-instance>
+    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1339"/>
+    </kwa:is-textconcept-instance>
+    <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
+    <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
+    <kwa:standoffResourceTextResourceReference>
+    	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-SchwFwbl-1922-07-08"/>
+    </kwa:standoffResourceTextResourceReference>
+</kwa:textexpression><kwa:textconcept id="tc-1339">
+<knora:label>Textconcept 1339: Kleist in Paris</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1339</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Kleist in Paris</kwa:hasTitle>
+</kwa:textconcept><kwa:textmanifest id="m-SchwFwbl-1922-07-08">
+		<knora:label>Manifest SchwFwbl-1922-07-08: Schweizerisches Familienwochenblatt für Unterhaltung und Belehrung 1922-07-08</knora:label>                       
+		<kwa:hasKwaManifestId knoraType="richtext_value">m-SchwFwbl-1922-07-08</kwa:hasKwaManifestId>
+		<kwa:hasTitle knoraType="richtext_value">Schweizerisches Familienwochenblatt für Unterhaltung und Belehrung 1922-07-08</kwa:hasTitle>
+		<kwa:textresource-fulltext knoraType="richtext_value">Schweizerisches Familienwochenblatt für Unterhaltung und Belehrung 1922-07-08</kwa:textresource-fulltext>
+</kwa:textmanifest><kwa:Magazine id="d-213">
+    <knora:label>Nsp: Nebelspalter</knora:label>
+    <kwa:hasDescription knoraType="richtext_value">Nebelspalter</kwa:hasDescription>    
+    <kwa:hasShortCode knoraType="richtext_value">Nsp</kwa:hasShortCode>
+    <kwa:hasSubtitle knoraType="richtext_value">Schweizerische humoristisch-satirische Wochenschrift</kwa:hasSubtitle>
+    <kwa:hasTitle knoraType="richtext_value">Nebelspalter</kwa:hasTitle>
+</kwa:Magazine><kwa:textconcept id="tc-1093">
+<knora:label>Textconcept 1093: Der Junggeselle</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1093</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Junggeselle</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1092">
+<knora:label>Textconcept 1092: Die Wurst</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1092</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Wurst</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1090">
+<knora:label>Textconcept 1090: Die böse Frau</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1090</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die böse Frau</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1096">
+<knora:label>Textconcept 1096: Schwendimann</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1096</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Schwendimann</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1094">
+<knora:label>Textconcept 1094: Zahnschmerzen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1094</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Zahnschmerzen</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-151">
+<knora:label>Textconcept 151: Ein ganz klein wenig Watteau</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-151</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ein ganz klein wenig Watteau</kwa:hasTitle>
+</kwa:textconcept><kwa:textmanifest id="m-Schue-1927-03-01">
+		<knora:label>Manifest Schue-1927-03-01: Der Schünemann-Monat 1927-03-01</knora:label>                       
+		<kwa:hasKwaManifestId knoraType="richtext_value">m-Schue-1927-03-01</kwa:hasKwaManifestId>
+		<kwa:hasTitle knoraType="richtext_value">Der Schünemann-Monat 1927-03-01</kwa:hasTitle>
+		<kwa:textresource-fulltext knoraType="richtext_value">Der Schünemann-Monat 1927-03-01</kwa:textresource-fulltext>
+</kwa:textmanifest><kwa:textexpression id="te-p-1383">
+    <knora:label>te-p-1: Ein ganz klein wenig Watteau</knora:label>
+    <kwa:hasIncipit knoraType="richtext_value">[Szenenanweisung] / Der Gleichgültige: Hunderte wunderten sich schon über meinen totalen Mangel an Teilnahme.</kwa:hasIncipit>
+    <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1383</kwa:hasKwaExpressionId>
+    <kwa:hasTitle knoraType="richtext_value">Ein ganz klein wenig Watteau</kwa:hasTitle>
+    <kwa:is-textconcept-instance>
+    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-151"/>
+    </kwa:is-textconcept-instance>
+    <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
+    <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
+    <kwa:standoffResourceTextResourceReference>
+    	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Schue-1927-03-01"/>
+    </kwa:standoffResourceTextResourceReference>
+</kwa:textexpression><kwa:textconcept id="tc-1079">
+<knora:label>Textconcept 1079: Der Spaziergang</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1079</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Spaziergang</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1081">
+<knora:label>Textconcept 1081: Die italienische Novelle</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1081</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die italienische Novelle</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1080">
+<knora:label>Textconcept 1080: Das Seestück</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1080</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das Seestück</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1086">
+<knora:label>Textconcept 1086: Die Mörderin</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1086</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Mörderin</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1085">
+<knora:label>Textconcept 1085: Die Verlassene</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1085</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Verlassene</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1084">
+<knora:label>Textconcept 1084: Der Maskenball</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1084</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Maskenball</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1088">
+<knora:label>Textconcept 1088: Schüler und Lehrer</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1088</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Schüler und Lehrer</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2385">
+<knora:label>Textconcept 2385: Das sind furchtbare Memoiren …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2385</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das sind furchtbare Memoiren …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2386">
+<knora:label>Textconcept 2386: Ich bin ganz aus dem System gekommen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2386</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ich bin ganz aus dem System gekommen</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2388">
+<knora:label>Textconcept 2388: Noch heute ich den Abend vor mir seh …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2388</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Noch heute ich den Abend vor mir seh …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2382">
+<knora:label>Textconcept 2382: Mit Erlaubnis zu sagen, gab es einmal …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2382</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Mit Erlaubnis zu sagen, gab es einmal …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2383">
+<knora:label>Textconcept 2383: Klugheit und Dummheit …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2383</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Klugheit und Dummheit …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2384">
+<knora:label>Textconcept 2384: Was Herrliches ist es …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2384</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Was Herrliches ist es …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2379">
+<knora:label>Textconcept 2379: Rathenau war von …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2379</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Rathenau war von …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2396">
+<knora:label>Textconcept 2396: Berge und Täler</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2396</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Berge und Täler</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1063">
+<knora:label>Textconcept 1063: Die Eisenbahnfahrt</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1063</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Eisenbahnfahrt</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1067">
+<knora:label>Textconcept 1067: Oskar</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1067</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Oskar</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1066">
+<knora:label>Textconcept 1066: Schwärmerei</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1066</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Schwärmerei</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1065">
+<knora:label>Textconcept 1065: Der Berg</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1065</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Berg</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2395">
+<knora:label>Textconcept 2395: Ich schrieb einst in einem von meinen Büchern …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2395</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ich schrieb einst in einem von meinen Büchern …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2356">
+<knora:label>Textconcept 2356: Etwas wie Liebe schimmert durch das Wäldchen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2356</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Etwas wie Liebe schimmert durch das Wäldchen</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2357">
+<knora:label>Textconcept 2357: Eines Tages ging ich durch die</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2357</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Eines Tages ging ich durch die</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1041">
+<knora:label>Textconcept 1041: Die Schneiderin</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1041</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Schneiderin</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2375">
+<knora:label>Textconcept 2375: Traum</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2375</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Traum</kwa:hasTitle>
+</kwa:textconcept><kwa:textmanifest id="m-Rhlde-1910-01-01">
+		<knora:label>Manifest Rhlde-1910-01-01: Die Rheinlande (Deutsche Monatshefte) 1910-01-01</knora:label>                       
+		<kwa:hasKwaManifestId knoraType="richtext_value">m-Rhlde-1910-01-01</kwa:hasKwaManifestId>
+		<kwa:hasTitle knoraType="richtext_value">Die Rheinlande (Deutsche Monatshefte) 1910-01-01</kwa:hasTitle>
+		<kwa:textresource-fulltext knoraType="richtext_value">Die Rheinlande (Deutsche Monatshefte) 1910-01-01</kwa:textresource-fulltext>
+</kwa:textmanifest><kwa:textexpression id="te-p-1011">
+    <knora:label>te-p-1: Bedenkliches</knora:label>
+    <kwa:hasIncipit knoraType="richtext_value">Wie doch die Menschen einander das Leben</kwa:hasIncipit>
+    <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1011</kwa:hasKwaExpressionId>
+    <kwa:hasTitle knoraType="richtext_value">Bedenkliches</kwa:hasTitle>
+    <kwa:is-textconcept-instance>
+    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1475"/>
+    </kwa:is-textconcept-instance>
+    <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
+    <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
+    <kwa:standoffResourceTextResourceReference>
+    	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Rhlde-1910-01-01"/>
+    </kwa:standoffResourceTextResourceReference>
+</kwa:textexpression><kwa:textconcept id="tc-1475">
+<knora:label>Textconcept 1475: Bedenkliches</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1475</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Bedenkliches</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1040">
+<knora:label>Textconcept 1040: Erinnerung</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1040</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Erinnerung</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1039">
+<knora:label>Textconcept 1039: Die Millionärin</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1039</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Millionärin</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-1037">
+<knora:label>Textconcept 1037: Sonntagmorgen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1037</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Sonntagmorgen</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2334">
+<knora:label>Textconcept 2334: Der Friede</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2334</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Friede</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2335">
+<knora:label>Textconcept 2335: Die Weitgereiste: Ich ließ dich …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2335</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Weitgereiste: Ich ließ dich …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2336">
+<knora:label>Textconcept 2336: Der Vermittelnde: zum Bestrebten: Du hast leider …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2336</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Vermittelnde: zum Bestrebten: Du hast leider …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2355">
+<knora:label>Textconcept 2355: Die Gestalten gehen still …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2355</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Gestalten gehen still …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2320">
+<knora:label>Textconcept 2320: Der Gebildete: Ich habe mich …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2320</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Gebildete: Ich habe mich …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2321">
+<knora:label>Textconcept 2321: Die Muntere, Der Schüchterne, Der Energische (Der Entschlossene), Der Kellner</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2321</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Muntere, Der Schüchterne, Der Energische (Der Entschlossene), Der Kellner</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2322">
+<knora:label>Textconcept 2322: Gesellschaftsraum / Anton: Sie scheinen ein …</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2322</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Gesellschaftsraum / Anton: Sie scheinen ein …</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2316">
+<knora:label>Textconcept 2316: Über Tausende von Gestalten</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2316</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Über Tausende von Gestalten</kwa:hasTitle>
+</kwa:textconcept><kwa:textconcept id="tc-2317">
+<knora:label>Textconcept 2317: Hier in diesem zierl’chen Prunkgebäude</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-2317</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Hier in diesem zierl’chen Prunkgebäude</kwa:hasTitle>
+</kwa:textconcept></knora:resources>
