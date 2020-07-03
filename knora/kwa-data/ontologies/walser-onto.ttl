@@ -390,7 +390,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                      "date hint"@en ;					
 					
              rdfs:comment 
-                 "A dating hint is a hint that is used to date an object." .   
+                 "A dating hint is a hint that is used to date an object." ;
+             knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .     
 
 	      
 ###############################################
@@ -492,7 +493,9 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                      "textcarrier"@en ;					
 					
              rdfs:comment 
-                 "A textcarrier, a single object consisting of several pages, e.g. a book, an issue of a journal or a manuscript. Can contain multiple surfaces." .
+                 "A textcarrier, a single object consisting of several pages, e.g. a book, an issue of a journal or a manuscript. Can contain multiple surfaces." ;
+             
+             knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                  
              
 
 ###############################################
@@ -537,7 +540,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
               rdfs:subClassOf knora-base:Resource  ;
               rdfs:comment "A concept of a text that can be materialized on various versions on textcarriers as different textmanifests" ;
               rdfs:label "Textkonzept"@de ,
-                          "text concept"@en .
+                          "text concept"@en ;
+              knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                           
                
                           
 ###############################################
@@ -632,7 +636,9 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
               rdfs:subClassOf knora-base:Resource  ;
               rdfs:comment "An expression of a concept of a text that can be materialized on various textcarriers as different textmanifests" ;
               rdfs:label "Textkonzept"@de ,
-                          "text concept"@en .
+                          "text concept"@en ;
+              
+              knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                           
 
       
                           
@@ -689,7 +695,9 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 					
               rdfs:comment "A single manifestation of a text (on a textcarrier or a set of textcarriers)" ;
               rdfs:label "Textmanifest"@de ,
-              "text manifest"@en .      
+              "text manifest"@en ;
+              
+              knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
               
               
 ########################
@@ -800,7 +808,9 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 					
               rdfs:comment "A column of thext on a textcarrier" ;
               rdfs:label "Kolumne"@de ,
-              "column"@en .      
+              "column"@en ;
+              
+              knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
 
 
 ###########################################              
@@ -897,7 +907,9 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 				
 			rdfs:comment "A person that is referenced in the context of the KWA." ;
             rdfs:label "Person"@de ,
-            "person"@en .
+            "person"@en ;
+
+            knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .             
             
             
        
@@ -923,7 +935,9 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 					salsah-gui:guiOrder "2"^^xsd:nonNegativeInteger] ;		
 			  rdfs:comment "A publication" ;
               rdfs:label "Publikation"@de ,
-              "publication"@en .  
+              "publication"@en ;
+
+              knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
               
               
 :Periodical rdf:type owl:Class ;
@@ -931,19 +945,22 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 			[a owl:Restriction; owl:onProperty :hasShortCode; owl:cardinality "1"^^xsd:nonNegativeInteger];  
     rdfs:comment "A periodical publication medium" ;
               rdfs:label "periodicum"@de ,
-              "periodical"@en .              
+              "periodical"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
               
 :Newspaper rdf:type owl:Class ;
 	rdfs:subClassOf :Periodical;  
     rdfs:comment "A newspaper as periodical publication medium" ;
               rdfs:label "Zeitung"@de ,
-              "newspaper"@en .
+              "newspaper"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
               
 :Magazine rdf:type owl:Class ;
 	rdfs:subClassOf :Periodical;
     rdfs:comment "A magazine as periodical publication medium" ;
               rdfs:label "Zeitschrift"@de ,
-              "magazine"@en .              
+              "magazine"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
 
        
 ############################################################
@@ -989,7 +1006,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
   	[a owl:Restriction; owl:onProperty :hasImprintedDate; owl:cardinality "1"^^xsd:nonNegativeInteger];
 	rdfs:comment "A printed, published textcarrier";
 	rdfs:label "Druck"@de,
-			   "Print"@en .
+			   "Print"@en ;
+   knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 
 :Repository rdf:type owl:Class;
 	rdfs:subClassOf knora-base:Resource,
@@ -997,7 +1015,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 	[rdf:type owl:Restriction;	owl:onProperty :hasName; owl:maxCardinality "1"^^xsd:nonNegativeInteger];
 	rdfs:comment "A repository or library.";
 	rdfs:label "Standort"@de,
-			   "Repository"@en .
+			   "Repository"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 			   
 :Manuscript rdf:type owl:Class;
 	rdfs:subClassOf :Textcarrier,
@@ -1008,33 +1027,38 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 	];
 	rdfs:comment "A manuscript";
 	rdfs:label "Manuskript"@de,
-			   "manuscript"@en .
+			   "manuscript"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 
 :Microgram rdf:type owl:Class;
 	rdfs:subClassOf :Manuscript;
 	rdfs:comment "A microgram";
 	rdfs:label "Mikrogramm"@de,
-			   "microgram"@en .
+			   "microgram"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 			   
 :isKeptAt rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasLinkTo ;
            rdfs:label "wird aufbewahrt von"@de ,                      
                       "is kept at"@en ;
            knora-base:subjectClassConstraint :Textcarrier;
-           knora-base:objectClassConstraint :Repository .
+           knora-base:objectClassConstraint :Repository ;
+           knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .            
            
 :isKeptAtValue rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasLinkToValue ;
            rdfs:label "wird aufbewahrt von"@de ,                      
                       "is kept at"@en ;
            knora-base:subjectClassConstraint :Textcarrier;
-           knora-base:objectClassConstraint knora-base:LinkValue .           
+           knora-base:objectClassConstraint knora-base:LinkValue ;
+           knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .            
 			   
 :Book rdf:type owl:Class;
   	rdfs:subClassOf :PrintedPublicationTextcarrier;
 	rdfs:comment "A book";
 	rdfs:label "Buch"@de,
-			   "book"@en .
+			   "book"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 			   
 :isIssueOf rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf knora-base:hasLinkTo ;
@@ -1092,7 +1116,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 	rdfs:comment "An issue or number of a periodical, identified by an issue number."@en,
 				 "Eine Nummer einer periodischen Publikation."@de;
 	rdfs:label "Nummer"@de,
-			   "periodical issue"@en .
+			   "periodical issue"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 			   
 :NewspaperIssue rdf:type owl:Class;			   
     rdfs:subClassOf :PeriodicalIssue,
@@ -1101,7 +1126,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 	rdfs:comment "A newspaper issue"@en,
 				 "Eine nummer einer Zeitung"@de;
 	rdfs:label "Zeitungsnummer"@de,
-			   "newspaper issue"@en .  
+			   "newspaper issue"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 			   
 :MagazineIssue rdf:type owl:Class;			   
     rdfs:subClassOf :PeriodicalIssue,
@@ -1110,7 +1136,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 	rdfs:comment "A magazine issue"@en,
 				 "Eine nummer einer Zeitschrift"@de;
 	rdfs:label "Zeitschriftennummer"@de,
-			   "magazine issue"@en .  
+			   "magazine issue"@en ;
+    knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 			   
 			  			   
 			   
 ###########################################
@@ -1128,7 +1155,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
            salsah-gui:guiElement salsah-gui:Spinbox ;
            salsah-gui:guiAttribute "min=0" ,
                                    "max=-1" ;
-          knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .
+          knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .          
 
 :standoffResourceEndIndex rdf:type owl:ObjectProperty ;
 		   rdfs:subPropertyOf knora-base:hasValue ;
@@ -1188,7 +1215,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 					; 
 			  rdfs:comment "A resource that is related to a fragment of a TextResource" ;
               rdfs:label "Standoff-Ressource"@de ,
-              "standoff resource"@en .      
+              "standoff resource"@en ;
+              knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
 
 :textresource-fulltext rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf  knora-base:hasValue ;
@@ -1212,7 +1240,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 					] ; 
 			  rdfs:comment "A resource that holds a fulltext field" ;
               rdfs:label "Text-Ressource"@de ,
-              "text resource"@en .
+              "text resource"@en ;
+              knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .               
               
 #
 #   Attributes for the regular standoff tags
@@ -1288,7 +1317,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 										owl:onProperty :standoffTagHasHandAttribute;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger  ;
 										];
-										rdfs:comment "A tag that optionally bears a rend and a hand attribute" .
+										rdfs:comment "A tag that optionally bears a rend and a hand attribute" ;
+        knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 										
 										
 #
 #  Class StandoffTypedTag: 
@@ -1299,7 +1329,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 										owl:onProperty :standoffTagHasTypeAttribute;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger  ;
 										];
-										rdfs:comment "A tag that optionally bears a type attribute" .
+										rdfs:comment "A tag that optionally bears a type attribute" ;
+        knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 										
 										
 #
 #  Class StandoffNumerableTag: 
@@ -1315,14 +1346,16 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 										owl:onProperty :standoffTagHasEdAttribute;
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger  ;
 										];
-										rdfs:comment "A tag that optionally bears an n and a ed attribute" .										
+										rdfs:comment "A tag that optionally bears an n and a ed attribute" ;
+        knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 										
 
 #
 #  The tei text tag
 #
 :StandoffTeiTextTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffStructuralTag;			   
-               rdfs:comment "marks a text, possibly within a group of texts"@en .										
+               rdfs:comment "marks a text, possibly within a group of texts"@en ;
+     knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                
 		
                
 #
@@ -1330,7 +1363,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 #
 :StandoffTeiGroupTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffStructuralTag;			   
-               rdfs:comment "marks a group of texts"@en .
+               rdfs:comment "marks a group of texts"@en ;
+     knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                
                
 #
 #  The tei div tag
@@ -1338,7 +1372,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 :StandoffTeiDivTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffStructuralTag;		
                rdfs:subClassOf :StandoffTypedTag ;
-               rdfs:comment "marks a division within a text"@en .
+               rdfs:comment "marks a division within a text"@en ;
+     knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                
 										
 										
 #
@@ -1348,7 +1383,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 :StandoffTeiPTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffParagraphTag;
 			   rdfs:subClassOf :StandoffRenderableTag ;
-               rdfs:comment "marks a paragraph as defined by the tei guidelines"@en .
+               rdfs:comment "marks a paragraph as defined by the tei guidelines"@en ;
+     knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                
                
 #
 #
@@ -1356,7 +1392,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 #
 :StandoffTeiSpTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffStructuralTag;
-               rdfs:comment "marks a part of speech"@en .               
+               rdfs:comment "marks a part of speech"@en ;
+     knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                 
      
 #
 #
@@ -1365,7 +1402,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 :StandoffTeiSpeakerTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffStructuralTag;
                rdfs:subClassOf :StandoffRenderableTag ;
-               rdfs:comment "marks speeker role within a part of speech"@en .                 
+               rdfs:comment "marks speeker role within a part of speech"@en ;
+     knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                
 
 #
 #
@@ -1375,7 +1413,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                rdfs:subClassOf standoff:StandoffStructuralTag;
                rdfs:subClassOf :StandoffRenderableTag ;
                rdfs:subClassOf :StandoffTypedTag ;
-               rdfs:comment "marks a stage instruction in a dramatic text"@en .                    
+               rdfs:comment "marks a stage instruction in a dramatic text"@en ;
+     knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                
                
 
 #
@@ -1388,7 +1427,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                rdfs:subClassOf standoff:StandoffParagraphTag;
 			   rdfs:subClassOf :StandoffRenderableTag ;
 			   rdfs:subClassOf :StandoffTypedTag ;
-               rdfs:comment "marks a header as defined by the tei guidelines"@en .               
+               rdfs:comment "marks a header as defined by the tei guidelines"@en ;
+               knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string .                
       
 #
 #
@@ -1398,7 +1438,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 :StandoffTeiBylineTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffParagraphTag;
 			   rdfs:subClassOf :StandoffRenderableTag ;
-			   rdfs:comment "marks a byline as defined by the tei guidelines"@en .                   
+			   rdfs:comment "marks a byline as defined by the tei guidelines"@en ;
+			   knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
 
 #
 #
@@ -1408,7 +1449,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 :StandoffTeiPbTag rdf:type owl:Class ;
                rdfs:subClassOf knora-base:StandoffTag;
 			   rdfs:subClassOf :StandoffNumerableTag ;
-			   rdfs:comment "marks a page break in some text witness"@en . 			   
+			   rdfs:comment "marks a page break in some text witness"@en ;
+ 			   knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
 
 #
 #
@@ -1418,7 +1460,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 :StandoffTeiCbTag rdf:type owl:Class ;
                rdfs:subClassOf knora-base:StandoffTag;
                rdfs:subClassOf :StandoffNumerableTag ;
-			   rdfs:comment "marks a column break in some text witness"@en . 			   
+			   rdfs:comment "marks a column break in some text witness"@en ;
+ 			   knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
 			   
 			   
 			   
@@ -1429,14 +1472,16 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 #
 :StandoffTeiUnclearTag rdf:type owl:Class ;
                rdfs:subClassOf knora-base:StandoffTag;
-			   rdfs:comment "marks a part of text as not clearly readable"@en .  			   
+			   rdfs:comment "marks a part of text as not clearly readable"@en ;
+  			   knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
 			   
 #
 #  The tei lg tag. A structural tag for a strophe of verse
 #
 :StandoffTeiLgTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffStructuralTag;
-               rdfs:comment "marks a strophe of verse"@en .			   
+               rdfs:comment "marks a strophe of verse"@en ;
+			   knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
 			   
 #
 #  The tei l tag. A structural tag for a line of verse
@@ -1447,7 +1492,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 										owl:maxCardinality "1"^^xsd:nonNegativeInteger  ;
 										];
 			   rdfs:subClassOf :StandoffRenderableTag ;
-               rdfs:comment "marks a line of verse"@en .
+               rdfs:comment "marks a line of verse"@en ;
+               knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
                
 
 #
@@ -1460,7 +1506,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 										];
 			   rdfs:subClassOf :StandoffRenderableTag ;
 			   rdfs:subClassOf :StandoffTypedTag ;			   
-               rdfs:comment "marks a part of text added to the previously existing text"@en .      
+               rdfs:comment "marks a part of text added to the previously existing text"@en ;
+               knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
                
 #
 #  The tei del tag. A structural tag for a part of text that has been marked as deleted
@@ -1469,7 +1516,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                rdfs:subClassOf standoff:StandoffStructuralTag;
 			   rdfs:subClassOf :StandoffRenderableTag ;
 			   rdfs:subClassOf :StandoffTypedTag ;			   
-               rdfs:comment "marks a part of a text marked for deletion"@en .                   
+               rdfs:comment "marks a part of a text marked for deletion"@en ;
+               knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
                
 			   
 #
@@ -1479,7 +1527,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 :StandoffTeiHiTag rdf:type owl:Class ;
                rdfs:subClassOf standoff:StandoffVisualTag;
 			   rdfs:subClassOf :StandoffRenderableTag ;
-               rdfs:comment "marks a highlighted span of text as defined by the tei guidelines"@en .                 
+               rdfs:comment "marks a highlighted span of text as defined by the tei guidelines"@en ;
+               knora-base:hasPermissions "M knora-admin:ProjectMember|V knora-admin:KnownUser,knora-admin:UnknownUser"^^xsd:string . 
                
                
 ###  StandoffSurfaceColumnTag
