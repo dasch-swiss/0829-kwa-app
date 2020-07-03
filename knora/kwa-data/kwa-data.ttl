@@ -8,8 +8,7 @@ load ./kwa-data/data/admin-data.ttl into http://www.knora.org/data/admin .
 load ./kwa-data/data/permissions-data.ttl into http://www.knora.org/data/permissions .
 load ./kwa-data/data/system-data.ttl into http://www.knora.org/data/0000/SystemProject .
 
-load ./kwa-data/data/walser-project.ttl into http://www.knora.org/data/admin .
-load ./kwa-data/ontologies/walser-onto.ttl into http://www.knora.org/ontology/CAFE/kwa .
+load ./kwa-data/ontologies/walser-onto.ttl into http://www.knora.org/ontology/0829/kwa .
 
 close .
 exit .

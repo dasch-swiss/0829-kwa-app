@@ -10,13 +10,13 @@
 @prefix salsah-gui: <http://www.knora.org/ontology/salsah-gui#> .
 @prefix standoff: <http://www.knora.org/ontology/standoff#> .
 
-@base <http://www.knora.org/ontology/CAFE/kwa> .
+@base <http://www.knora.org/ontology/0829/kwa> .
 
-@prefix walser: <http://www.knora.org/ontology/CAFE/kwa#> .
-@prefix : <http://www.knora.org/ontology/CAFE/kwa#> .
+@prefix walser: <http://www.knora.org/ontology/0829/kwa#> .
+@prefix : <http://www.knora.org/ontology/0829/kwa#> .
 
-<http://www.knora.org/ontology/CAFE/kwa> rdf:type owl:Ontology ;
-knora-base:attachedToProject <http://rdfh.ch/projects/CAFE> .
+<http://www.knora.org/ontology/0829/kwa> rdf:type owl:Ontology ;
+knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 
 
 ###############################################

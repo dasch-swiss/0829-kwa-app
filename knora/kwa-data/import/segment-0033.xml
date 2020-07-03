@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1# ./pCAFE-kwa.xsd"><kwa:Magazine id="d-56">
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:Magazine id="d-56">
     <knora:label>WBl: Die weissen Blätter</knora:label>
     <kwa:hasDescription knoraType="richtext_value">Die weissen Blätter</kwa:hasDescription>    
     <kwa:hasShortCode knoraType="richtext_value">WBl</kwa:hasShortCode>

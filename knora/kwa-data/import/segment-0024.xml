@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1# ./pCAFE-kwa.xsd"><kwa:textmanifest id="m-SB-1907-03-07">
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:textmanifest id="m-SB-1907-03-07">
 		<knora:label>Manifest SB-1907-03-07: Die Schaubühne 1907-03-07</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-SB-1907-03-07</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Die Schaubühne 1907-03-07</kwa:hasTitle>

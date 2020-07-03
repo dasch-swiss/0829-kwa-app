@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1# ./pCAFE-kwa.xsd"><kwa:Surface id="s-WiM-1918-12-24-1">
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:Surface id="s-WiM-1918-12-24-1">
  	<knora:label>Surface WiM-1918-12-24 1</knora:label> 	
  	<kwa:image-name knoraType="richtext_value">_</kwa:image-name>
     <kwa:page_no knoraType="richtext_value">1</kwa:page_no>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1# ./pCAFE-kwa.xsd"><kwa:textexpression id="te-p-817">
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:textexpression id="te-p-817">
     <knora:label>te-p-1: Zwei Frauen</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">Ein zartes schönes Mädchen, das Olga hieß, bewunderte einen Mann</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-817</kwa:hasKwaExpressionId>

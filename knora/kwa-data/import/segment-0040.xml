@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/CAFE/kwa/xml-import/v1# ./pCAFE-kwa.xsd"><kwa:textconcept id="tc-1713">
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:textconcept id="tc-1713">
 <knora:label>Textconcept 1713: Weiche Teiche</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-1713</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Weiche Teiche</kwa:hasTitle>
