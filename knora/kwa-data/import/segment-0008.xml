@@ -161,7 +161,7 @@
             	<kwa:Magazine knoraType="link_value" linkType="ref" target="d-10"/>
             </kwa:isIssueOfMagazine>
 </kwa:MagazineIssue><kwa:Column id="s-NSchR-1926-03-01-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-NSchR-1926-03-01-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-NSchR-1926-03-01-1"/>
@@ -271,7 +271,7 @@
     </kwa:partOfTextcarrier>
     <kwa:surfaceSequenceNo knoraType="int_value">0</kwa:surfaceSequenceNo>                        
 </kwa:Surface><kwa:Column id="s-NSchR-1927-09-01-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-NSchR-1927-09-01-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-NSchR-1927-09-01-1"/>
@@ -297,7 +297,7 @@
             	<kwa:Magazine knoraType="link_value" linkType="ref" target="d-10"/>
             </kwa:isIssueOfMagazine>
 </kwa:MagazineIssue><kwa:Column id="s-NSchR-1927-07-01-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-NSchR-1927-07-01-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-NSchR-1927-07-01-1"/>
@@ -323,7 +323,7 @@
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-NSchR-1927-09-01"/>
     </kwa:standoffResourceTextResourceReference>
 </kwa:Textexpression><kwa:Column id="s-NSchR-1927-06-01-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-NSchR-1927-06-01-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-NSchR-1927-06-01-1"/>
@@ -437,7 +437,7 @@
     </kwa:partOfTextcarrier>
     <kwa:surfaceSequenceNo knoraType="int_value">0</kwa:surfaceSequenceNo>                        
 </kwa:Surface><kwa:Column id="s-WL-NSchwR-1919-01-15-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-WL-NSchwR-1919-01-15-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-WL-NSchwR-1919-01-15-1"/>
@@ -455,7 +455,7 @@
 		<kwa:hasTitle knoraType="richtext_value">Wissen und Leben 1925-06-20</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Wissen und Leben 1925-06-20</kwa:textresource-fulltext>
 </kwa:Textmanifest><kwa:Column id="s-WL-NSchwR-1925-06-20-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-WL-NSchwR-1925-06-20-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-WL-NSchwR-1925-06-20-1"/>
@@ -595,7 +595,7 @@
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-WL-NSchwR-1919-01-15"/>
     </kwa:standoffResourceTextResourceReference>
 </kwa:Textexpression><kwa:Column id="s-WL-NSchwR-1923-12-15-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-WL-NSchwR-1923-12-15-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-WL-NSchwR-1923-12-15-1"/>
@@ -709,7 +709,7 @@
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-WiM-1918-12-24"/>
     </kwa:standoffResourceTextResourceReference>
 </kwa:Textexpression><kwa:Column id="s-WiM-1918-12-24-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-WiM-1918-12-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-WiM-1918-12-24-1"/>
@@ -722,7 +722,7 @@
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
 </kwa:Column><kwa:Column id="s-WL-NSchwR-1924-12-20-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-WL-NSchwR-1924-12-20-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-WL-NSchwR-1924-12-20-1"/>

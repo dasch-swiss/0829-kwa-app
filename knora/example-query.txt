@@ -32,7 +32,7 @@ WHERE
         ?textconcept walser:hasTitle ?conceptTitle;
                      walser:hasKwaConceptId ?conceptId.
 
-		?textexpression a walser:textexpression ;
+		?textexpression a walser:Textexpression ;
         	walser:hasTitle ?title ;
         	walser:hasIncipit ?incipit ;
         	walser:isTextconceptInstance ?textconcept;

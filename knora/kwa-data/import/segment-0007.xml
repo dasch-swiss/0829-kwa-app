@@ -17,7 +17,7 @@
             	<kwa:Newspaper knoraType="link_value" linkType="ref" target="d-417"/>
             </kwa:isIssueOfNewspaper>
 </kwa:NewspaperIssue><kwa:Column id="s-SchaIbl-1907-10-09-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-SchaIbl-1907-10-09-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-SchaIbl-1907-10-09-1"/>
@@ -61,7 +61,7 @@
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-NWB-1907-10-16"/>
     </kwa:standoffResourceTextResourceReference>
 </kwa:Textexpression><kwa:Column id="s-GrGA-1908-02-01-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-GrGA-1908-02-01-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-GrGA-1908-02-01-1"/>
@@ -182,7 +182,7 @@
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-GrGA-1908-02-01"/>
     </kwa:standoffResourceTextResourceReference>
 </kwa:Textexpression><kwa:Column id="s-Tanz-Z--1907-12-24-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-Tanz-Z--1907-12-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-Tanz-Z--1907-12-24-1"/>
@@ -195,7 +195,7 @@
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
 </kwa:Column><kwa:Column id="s-NFP-1907-10-06-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-NFP-1907-10-06-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-NFP-1907-10-06-1"/>
@@ -305,7 +305,7 @@
             	<kwa:Newspaper knoraType="link_value" linkType="ref" target="d-491"/>
             </kwa:isIssueOfNewspaper>
 </kwa:NewspaperIssue><kwa:Column id="s-EZ-1907-10-17-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-EZ-1907-10-17-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-EZ-1907-10-17-1"/>
@@ -336,7 +336,7 @@
     
     <kwa:hasTitle knoraType="richtext_value">Egerer Zeitung</kwa:hasTitle>
 </kwa:Magazine><kwa:Column id="s-NWB-1907-10-16-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-NWB-1907-10-16-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-NWB-1907-10-16-1"/>
@@ -385,7 +385,7 @@
 		<kwa:hasTitle knoraType="richtext_value">Pragai Magyar Hirlap 1926-04-11</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Pragai Magyar Hirlap 1926-04-11</kwa:textresource-fulltext>
 </kwa:Textmanifest><kwa:Column id="s-PMH-1926-04-11-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-PMH-1926-04-11-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-PMH-1926-04-11-1"/>
@@ -499,7 +499,7 @@
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Bima-1916-06-20"/>
     </kwa:standoffResourceTextResourceReference>
 </kwa:Textexpression><kwa:Column id="s-Bima-1916-06-20-1-1">
- <knora:label>PP-1933-09-24-1-1</knora:label>
+ <knora:label>s-Bima-1916-06-20-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
  	<kwa:Surface knoraType="link_value" linkType="ref" target="s-Bima-1916-06-20-1"/>
