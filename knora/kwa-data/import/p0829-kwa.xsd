@@ -373,14 +373,14 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="image-copyright"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="image-description"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="image-name"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="page_no"/>
-                        <xs:element type="Textcarrier_linkValueType" maxOccurs="1" minOccurs="1" name="part-of-textcarrier"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="surface-name"/>
-                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="surface-sequence-no"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="transcription-name"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="hasName"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="imageCopyright"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="imageDescription"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="imageName"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="pageNo"/>
+                        <xs:element type="Textcarrier_linkValueType" maxOccurs="1" minOccurs="1" name="partOfTextcarrier"/>
+                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="surfaceSequenceNo"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="transcriptionName"/>
                     </xs:sequence>
                 </xs:extension>
             </xs:complexContent>
@@ -439,13 +439,13 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
-                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="notation-sequence-no"/>
-                        <xs:element type="Surface_linkValueType" maxOccurs="1" minOccurs="1" name="on-surface"/>
-                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="on-surface-sequence-no"/>
+                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="notationSequenceNo"/>
+                        <xs:element type="Surface_linkValueType" maxOccurs="1" minOccurs="1" name="onSurface"/>
+                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="onSurfaceSequenceNo"/>
                         <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceEndIndex"/>
                         <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceStartIndex"/>
                         <xs:element type="TextResource_linkValueType" maxOccurs="1" minOccurs="1" name="standoffResourceTextResourceReference"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="surface-notation-no"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="surfaceNotationNo"/>
                     </xs:sequence>
                 </xs:extension>
             </xs:complexContent>

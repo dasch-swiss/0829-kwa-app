@@ -8,15 +8,15 @@ CONSTRUCT {
 
 		?textexpression walser:hasTitle ?title ;
 		    walser:hasIncipit ?incipit ;
-		    walser:is-textconcept-instance ?textconcept;
+		    walser:isTextconceptInstance ?textconcept;
         	walser:standoffResourceTextResourceReference ?textmanifest .
         	
         ?textmanifest walser:hasKwaManifestId ?manifestId.
         
         ?column walser:standoffResourceTextResourceReference ?textmanifest ;
-                walser:on-surface ?surface .
+                walser:onSurface ?surface .
                 
-        ?surface walser:part-of-textcarrier ?textcarrier.
+        ?surface walser:partOfTextcarrier ?textcarrier.
         
         ?textcarrier walser:hasName ?textcarrierName.
         
@@ -35,16 +35,16 @@ WHERE
 		?textexpression a walser:textexpression ;
         	walser:hasTitle ?title ;
         	walser:hasIncipit ?incipit ;
-        	walser:is-textconcept-instance ?textconcept;
+        	walser:isTextconceptInstance ?textconcept;
 	        walser:standoffResourceTextResourceReference ?textmanifest .
 	     
 
 	      ?textmanifest walser:hasKwaManifestId ?manifestId.
         
         ?column walser:standoffResourceTextResourceReference ?textmanifest ;
-                walser:on-surface ?surface .
+                walser:onSurface ?surface .
                 
-        ?surface walser:part-of-textcarrier ?textcarrier.
+        ?surface walser:partOfTextcarrier ?textcarrier.
         
         ?textcarrier walser:hasName ?textcarrierName.
         
@@ -54,8 +54,8 @@ WHERE
                          walser:hasImprintedDate ?imprintedDate.
         }
 	       
+	       
 	   FILTER knora-api:match(?title, 'Schnee').
-	   
 	   OPTIONAL
 	   {
 	    FILTER (?issueTitle = 'Prager Tagblatt').
