@@ -1,241 +1,241 @@
-<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:textconcept id="tc-167">
-<knora:label>Textconcept 167: Selenwanderung</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-167</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Selenwanderung</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-156">
-<knora:label>Textconcept 156: Das schöne Kammermädchen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-156</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Das schöne Kammermädchen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-187">
-<knora:label>Textconcept 187: Ein Fehler</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-187</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ein Fehler</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-110">
-<knora:label>Textconcept 110: Alfreds Erklärung</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-110</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Alfreds Erklärung</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-111">
-<knora:label>Textconcept 111: Die Erzählung von den vier glücklichen Knaben</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-111</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Die Erzählung von den vier glücklichen Knaben</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-114">
-<knora:label>Textconcept 114: Der Mann aus dem Jura</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-114</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Der Mann aus dem Jura</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-108">
-<knora:label>Textconcept 108: Wir verlieren uns nicht so schnell</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-108</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Wir verlieren uns nicht so schnell</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-109">
-<knora:label>Textconcept 109: Das Erlebnis Georgs des Ernsten</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-109</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Das Erlebnis Georgs des Ernsten</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1691">
-<knora:label>Textconcept 1691: In manchem Papeteriegeschäft</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1691</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">In manchem Papeteriegeschäft</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1695">
-<knora:label>Textconcept 1695: Nasenflügelbeglückender Duft von sauren Mocken</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1695</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Nasenflügelbeglückender Duft von sauren Mocken</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1694">
-<knora:label>Textconcept 1694: Ehrfurchtgebietend hängt ein Frauengewand</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1694</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ehrfurchtgebietend hängt ein Frauengewand</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1693">
-<knora:label>Textconcept 1693: Ehrfurchtgebietend hängt ein Frauenrock</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1693</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ehrfurchtgebietend hängt ein Frauenrock</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1692">
-<knora:label>Textconcept 1692: Junge Frau, du mußt was lesen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1692</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Junge Frau, du mußt was lesen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1699">
-<knora:label>Textconcept 1699: Mozart, so hieß ein Musikus</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1699</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Mozart, so hieß ein Musikus</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1698">
-<knora:label>Textconcept 1698: Das ist doch nichts wie schön</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1698</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Das ist doch nichts wie schön</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1697">
-<knora:label>Textconcept 1697: Sie stand im Kleid mit breiten Falten da</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1697</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Sie stand im Kleid mit breiten Falten da</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1696">
-<knora:label>Textconcept 1696: Das Bauernhaus, mit Stroh bedeckt</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1696</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Das Bauernhaus, mit Stroh bedeckt</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1673">
-<knora:label>Textconcept 1673: Der Eindruck, den mir die „Fräulein Julie“ Vorstellung schenkte</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1673</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Der Eindruck, den mir die „Fräulein Julie“ Vorstellung schenkte</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1672">
-<knora:label>Textconcept 1672: Tiger und Theaterstücke gibt’s</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1672</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Tiger und Theaterstücke gibt’s</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1671">
-<knora:label>Textconcept 1671: Gestern kam’s scharenweise auf mich zugeflogen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1671</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Gestern kam’s scharenweise auf mich zugeflogen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1670">
-<knora:label>Textconcept 1670: Ein Tag vergeht nach dem anderen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1670</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ein Tag vergeht nach dem anderen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1666">
-<knora:label>Textconcept 1666: Irgendwo liegen Städte</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1666</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Irgendwo liegen Städte</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1665">
-<knora:label>Textconcept 1665: Mit dem Satz, wie ist es interessant, sich zu fürchten</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1665</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Mit dem Satz, wie ist es interessant, sich zu fürchten</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1664">
-<knora:label>Textconcept 1664: Man machte mich nicht umsonst auf Klassiker usw. eindringlich aufmerksam</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1664</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Man machte mich nicht umsonst auf Klassiker usw. eindringlich aufmerksam</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1663">
-<knora:label>Textconcept 1663: Wenn man schon einmal eine Elektra war</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1663</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Wenn man schon einmal eine Elektra war</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1669">
-<knora:label>Textconcept 1669: Obgleich Molière mit seinen Theaterstücken</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1669</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Obgleich Molière mit seinen Theaterstücken</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1668">
-<knora:label>Textconcept 1668: Sammetige Damen sind da hart</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1668</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Sammetige Damen sind da hart</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1667">
-<knora:label>Textconcept 1667: Der Liebhaber dieses Stückes</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1667</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Der Liebhaber dieses Stückes</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1680">
-<knora:label>Textconcept 1680: Dasselbe hat wahrscheinlich etwas wie ein Hieb sein sollen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1680</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Dasselbe hat wahrscheinlich etwas wie ein Hieb sein sollen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1682">
-<knora:label>Textconcept 1682: Vergessen würde er mich müssen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1682</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Vergessen würde er mich müssen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1681">
-<knora:label>Textconcept 1681: Ich spreche im Konversationston</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1681</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ich spreche im Konversationston</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1677">
-<knora:label>Textconcept 1677: Hätten wir nicht so viele moralische Hitzköpfe</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1677</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Hätten wir nicht so viele moralische Hitzköpfe</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1676">
-<knora:label>Textconcept 1676: Ich befasse mich hier zum Glück mit nichts Allzuaktuellem</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1676</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ich befasse mich hier zum Glück mit nichts Allzuaktuellem</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1675">
-<knora:label>Textconcept 1675: Jeder hervorragende Mensch ist irgendeinmal in Zürich</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1675</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Jeder hervorragende Mensch ist irgendeinmal in Zürich</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1674">
-<knora:label>Textconcept 1674: Er besaß das Aussehen eines Kellermenschenbeherrschers</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1674</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Er besaß das Aussehen eines Kellermenschenbeherrschers</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1679">
-<knora:label>Textconcept 1679: Diese Geschichte ist eine eher drollige als schöne</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1679</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Diese Geschichte ist eine eher drollige als schöne</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1678">
-<knora:label>Textconcept 1678: Talent, was ist das?</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1678</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Talent, was ist das?</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1651">
-<knora:label>Textconcept 1651: Ein verliebter Schöngeist, der in einem fort seine Geliebte andichtete</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1651</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ein verliebter Schöngeist, der in einem fort seine Geliebte andichtete</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1650">
-<knora:label>Textconcept 1650: Einen Weltstadtaufenthalt nicht höher einzuschätzen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1650</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Einen Weltstadtaufenthalt nicht höher einzuschätzen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1644">
-<knora:label>Textconcept 1644: Ich sitze in einem fort zu Hause und bin tätig</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1644</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ich sitze in einem fort zu Hause und bin tätig</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1643">
-<knora:label>Textconcept 1643: O, wie kommt’s mir entgegenkommend vor</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1643</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">O, wie kommt’s mir entgegenkommend vor</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1642">
-<knora:label>Textconcept 1642: Sie hätten eine Menge Aufgaben sehr feiner Art</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1642</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Sie hätten eine Menge Aufgaben sehr feiner Art</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1641">
-<knora:label>Textconcept 1641: Darf ich Ihnen mit Heutigem den Mann mit den hunderttausend Franken vorstellen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1641</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Darf ich Ihnen mit Heutigem den Mann mit den hunderttausend Franken vorstellen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1648">
-<knora:label>Textconcept 1648: Wie Kinder zogen die Soldaten</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1648</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Wie Kinder zogen die Soldaten</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1647">
-<knora:label>Textconcept 1647: Ich habe es hier mit einem Sieger zu tun</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1647</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ich habe es hier mit einem Sieger zu tun</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1646">
-<knora:label>Textconcept 1646: Was diese Normannen seinerzeit für eine Ausdauer hatten!</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1646</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Was diese Normannen seinerzeit für eine Ausdauer hatten!</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1645">
-<knora:label>Textconcept 1645: Vor zirka zweihunderttausend Jahren</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1645</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Vor zirka zweihunderttausend Jahren</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1649">
-<knora:label>Textconcept 1649: Nur klein werde ich hoffentlich hier sein</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1649</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Nur klein werde ich hoffentlich hier sein</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1662">
-<knora:label>Textconcept 1662: Ob der und der Autor… splendid wohnt</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1662</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ob der und der Autor… splendid wohnt</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1661">
-<knora:label>Textconcept 1661: Das belletristische Buch</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1661</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Das belletristische Buch</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1660">
-<knora:label>Textconcept 1660: Aktualismus in bildenden Dingen</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1660</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Aktualismus in bildenden Dingen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1655">
-<knora:label>Textconcept 1655: Ob die Befreiungsfrage restlos gelöst ist</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1655</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Ob die Befreiungsfrage restlos gelöst ist</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1654">
-<knora:label>Textconcept 1654: In einem Gemach, dessen Wände schwarz strahlten</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1654</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">In einem Gemach, dessen Wände schwarz strahlten</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1653">
-<knora:label>Textconcept 1653: Zu hell vielleicht schon, zu aufgeklärt</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1653</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Zu hell vielleicht schon, zu aufgeklärt</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1652">
-<knora:label>Textconcept 1652: Zart war die Idee</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1652</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Zart war die Idee</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1659">
-<knora:label>Textconcept 1659: Eben sprang aus einem Verlagshaus ein Buch heraus</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1659</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Eben sprang aus einem Verlagshaus ein Buch heraus</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1658">
-<knora:label>Textconcept 1658: Bücher können Erfolge sein</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1658</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Bücher können Erfolge sein</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1657">
-<knora:label>Textconcept 1657: Indem ich meine</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1657</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Indem ich meine</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1656">
-<knora:label>Textconcept 1656: Wenn ich mich mit diesem Aufsatz über Theaterzustände eigentlich gar nicht beeile</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1656</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Wenn ich mich mit diesem Aufsatz über Theaterzustände eigentlich gar nicht beeile</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-1871">
-<knora:label>Textconcept 1871: Sie blieb gesund und frisch</knora:label>
-<kwa:hasKwaConceptId knoraType="richtext_value">tc-1871</kwa:hasKwaConceptId>
-<kwa:hasTitle knoraType="richtext_value">Sie blieb gesund und frisch</kwa:hasTitle>
-</kwa:textconcept></knora:resources>
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:Textconcept id="tc-1837">
+<knora:label>Textconcept 1837: Wie kommen mir oft alte Herrn und Frauen jung vor</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1837</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Wie kommen mir oft alte Herrn und Frauen jung vor</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1836">
+<knora:label>Textconcept 1836: Das Leben auf dem Lande hat das Schöne</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1836</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das Leben auf dem Lande hat das Schöne</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1802">
+<knora:label>Textconcept 1802: Und nun schau’ ich auf die erlebte Liebe</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1802</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Und nun schau’ ich auf die erlebte Liebe</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1801">
+<knora:label>Textconcept 1801: Die Schöne schrieb dem Jugendfreund</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1801</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Schöne schrieb dem Jugendfreund</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1800">
+<knora:label>Textconcept 1800: Man ändert etwa hie und da die Richtung des Denkens</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1800</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Man ändert etwa hie und da die Richtung des Denkens</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1806">
+<knora:label>Textconcept 1806: Wehmütiges Motiv</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1806</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Wehmütiges Motiv</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1805">
+<knora:label>Textconcept 1805: Sie schaute milde auf ein Schild</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1805</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Sie schaute milde auf ein Schild</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1804">
+<knora:label>Textconcept 1804: Er war zu schwach</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1804</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Er war zu schwach</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1803">
+<knora:label>Textconcept 1803: Etwas unsäglich Junges war an ihr</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1803</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Etwas unsäglich Junges war an ihr</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1809">
+<knora:label>Textconcept 1809: Alle, ich meine, jedenfalls sehr viele</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1809</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Alle, ich meine, jedenfalls sehr viele</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1808">
+<knora:label>Textconcept 1808: Manchmal erschien das Abendgold mir wie ein Mantel</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1808</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Manchmal erschien das Abendgold mir wie ein Mantel</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1807">
+<knora:label>Textconcept 1807: Noch vor einer halben Stunde</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1807</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Noch vor einer halben Stunde</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1813">
+<knora:label>Textconcept 1813: Gewiß ist irgend noch an uns was Schönes</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1813</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Gewiß ist irgend noch an uns was Schönes</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1812">
+<knora:label>Textconcept 1812: Sie schaute immer still und sittsam aus</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1812</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Sie schaute immer still und sittsam aus</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1811">
+<knora:label>Textconcept 1811: Vermutlich war er sehr nervös</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1811</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Vermutlich war er sehr nervös</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1810">
+<knora:label>Textconcept 1810: Wie backige Äpfelchen an Baumen prangen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1810</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Wie backige Äpfelchen an Baumen prangen</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1817">
+<knora:label>Textconcept 1817: Sehr niedlich sahst du neulich aus</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1817</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Sehr niedlich sahst du neulich aus</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1816">
+<knora:label>Textconcept 1816: War ich ein anderer als bis dahin</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1816</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">War ich ein anderer als bis dahin</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1815">
+<knora:label>Textconcept 1815: Im Winter, o, da hättet ihr sie sehen sollen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1815</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Im Winter, o, da hättet ihr sie sehen sollen</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1814">
+<knora:label>Textconcept 1814: Er las</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1814</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Er las</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1819">
+<knora:label>Textconcept 1819: Sie glich in ihrer Anmut einer Wolke</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1819</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Sie glich in ihrer Anmut einer Wolke</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-1818">
+<knora:label>Textconcept 1818: Besser ist’s für dich, wenn ich dich hasse</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-1818</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Besser ist’s für dich, wenn ich dich hasse</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-298">
+<knora:label>Textconcept 298: Der rote Faden</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-298</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der rote Faden</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-296">
+<knora:label>Textconcept 296: Prosastück</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-296</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Prosastück</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-299">
+<knora:label>Textconcept 299: Ich schreibe hier dekorativ</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-299</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ich schreibe hier dekorativ</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-292">
+<knora:label>Textconcept 292: Von etwas Naheliegendem</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-292</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Von etwas Naheliegendem</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-285">
+<knora:label>Textconcept 285: Katze und Schlange</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-285</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Katze und Schlange</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-288">
+<knora:label>Textconcept 288: Romantische Antwort</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-288</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Romantische Antwort</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-283">
+<knora:label>Textconcept 283: Stück ohne Titel</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-283</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Stück ohne Titel</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-280">
+<knora:label>Textconcept 280: Das stolze Schweigen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-280</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das stolze Schweigen</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-273">
+<knora:label>Textconcept 273: Krisis</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-273</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Krisis</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-279">
+<knora:label>Textconcept 279: Der Repräsentant</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-279</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Repräsentant</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-277">
+<knora:label>Textconcept 277: Staublappenmensch</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-277</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Staublappenmensch</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-271">
+<knora:label>Textconcept 271: Ich schreibe hier einen Aufsatz</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-271</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ich schreibe hier einen Aufsatz</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-272">
+<knora:label>Textconcept 272: Bleistiftskizze</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-272</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Bleistiftskizze</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-264">
+<knora:label>Textconcept 264: Ein Traum</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-264</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ein Traum</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-265">
+<knora:label>Textconcept 265: Ich bin zur Zeit kränklich</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-265</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ich bin zur Zeit kränklich</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-263">
+<knora:label>Textconcept 263: Der heiße Brei</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-263</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der heiße Brei</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-266">
+<knora:label>Textconcept 266: Neujahrsblatt</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-266</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Neujahrsblatt</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-267">
+<knora:label>Textconcept 267: Das Erlebnis Josefs</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-267</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das Erlebnis Josefs</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-260">
+<knora:label>Textconcept 260: Wissen und Leben</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-260</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Wissen und Leben</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-219">
+<knora:label>Textconcept 219: Der Trottel</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-219</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Der Trottel</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-213">
+<knora:label>Textconcept 213: Über Mozarts „Don Juan“</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-213</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Über Mozarts „Don Juan“</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-200">
+<knora:label>Textconcept 200: Potpourri</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-200</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Potpourri</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-259">
+<knora:label>Textconcept 259: Die Stadt und die Geliebte</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-259</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Stadt und die Geliebte</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-253">
+<knora:label>Textconcept 253: Das Wirtshaus am Waldrand</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-253</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Das Wirtshaus am Waldrand</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-254">
+<knora:label>Textconcept 254: Waldfest</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-254</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Waldfest</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-252">
+<knora:label>Textconcept 252: Wie ich einen Sonntag zubrachte</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-252</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Wie ich einen Sonntag zubrachte</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-255">
+<knora:label>Textconcept 255: Städtebild</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-255</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Städtebild</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-256">
+<knora:label>Textconcept 256: Reise in eine Kleinstadt</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-256</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Reise in eine Kleinstadt</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-246">
+<knora:label>Textconcept 246: Ottilie Wildermuth</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-246</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ottilie Wildermuth</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-245">
+<knora:label>Textconcept 245: Ich wohnte einem Konzert bei</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-245</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ich wohnte einem Konzert bei</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-239">
+<knora:label>Textconcept 239: Aufenthalt in einer Stadt</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-239</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Aufenthalt in einer Stadt</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-237">
+<knora:label>Textconcept 237: Einiges aus meinen Jugendjahren</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-237</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Einiges aus meinen Jugendjahren</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-238">
+<knora:label>Textconcept 238: Als ich Kadett war</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-238</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Als ich Kadett war</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-236">
+<knora:label>Textconcept 236: Rapport</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-236</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Rapport</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-234">
+<knora:label>Textconcept 234: Zarte Zeilen</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-234</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Zarte Zeilen</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-224">
+<knora:label>Textconcept 224: Vater und Tochter</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-224</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Vater und Tochter</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-222">
+<knora:label>Textconcept 222: Ein Unsterblicher</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-222</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Ein Unsterblicher</kwa:hasTitle>
+</kwa:Textconcept><kwa:Textconcept id="tc-223">
+<knora:label>Textconcept 223: Die Schriftstellerin</knora:label>
+<kwa:hasKwaConceptId knoraType="richtext_value">tc-223</kwa:hasKwaConceptId>
+<kwa:hasTitle knoraType="richtext_value">Die Schriftstellerin</kwa:hasTitle>
+</kwa:Textconcept></knora:resources>

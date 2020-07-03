@@ -384,7 +384,27 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 	rdfs:comment """Relating a textcarrier to a library signature."""@en;
 	rdfs:subPropertyOf :hasShortCode ;
 	knora-base:subjectClassConstraint :Textcarrier;
-	knora-base:objectClassConstraint knora-base:TextValue .                                             
+	knora-base:objectClassConstraint knora-base:TextValue .        
+	
+# this is a short cut property to avoid joining via surface->column->standoff->textmanifest<-standoff<-textexpression
+# however, it introduces redundancy
+# It relies on knoras ordered values feature...
+:carriesTextexpression rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf knora-base:hasLinkTo ;
+           rdfs:label "Trägt Textexpression"@de ,                      
+                      "Carries Textexpression"@en ;
+           knora-base:subjectClassConstraint :Textcarrier;
+           knora-base:objectClassConstraint :Textexpression ;                      
+           salsah-gui:guiElement salsah-gui:Searchbox ;
+           salsah-gui:guiAttribute "numprops=2" . 
+
+:carriesTextexpressionValue rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf knora-base:hasLinkToValue ;
+                rdfs:label "Trägt Textexpression"@de ,                      
+                	      "Carries Textexpression"@en ;
+                knora-base:subjectClassConstraint :Textcarrier ;
+          		knora-base:objectClassConstraint knora-base:LinkValue .
+
                                                 
 
 #################
@@ -439,6 +459,15 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 				 [  rdf:type owl:Restriction;
 					owl:onProperty :hasDate;
 					owl:minCardinality "0"^^xsd:nonNegativeInteger
+				 ],
+				 [
+					rdf:type owl:Restriction;
+					owl:onProperty :carriesTextexpression;
+					owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+				 ],
+				 [  rdf:type owl:Restriction;
+					owl:onProperty :carriesTextexpressionValue;
+					owl:minCardinality "0"^^xsd:nonNegativeInteger
 				 ];
 					
 		     rdfs:label "Textträger"@de ,
@@ -465,7 +494,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
           rdfs:label "KWA Textkonzept-Id"@de ,
                      "Kwa textconcept id"@en ;
           rdfs:comment "An id of the textcarrier in the context of the kwa. Corresponds to the maintexts database id (if any)" ;
-          knora-base:subjectClassConstraint :textconcept;
+          knora-base:subjectClassConstraint :Textconcept;
           knora-base:objectClassConstraint knora-base:TextValue ;
           salsah-gui:guiElement salsah-gui:SimpleText ;
           salsah-gui:guiAttribute "size=128" ,
@@ -473,7 +502,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 
 ##############
 ## Class TEXTCONCEPT
-:textconcept  rdf:type owl:Class  ;
+:Textconcept  rdf:type owl:Class  ;
               rdfs:subClassOf knora-base:Resource ,	 
 					[
 					rdf:type owl:Restriction;
@@ -506,7 +535,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
           rdfs:label "KWA Textexpression-Id"@de ,
                      "Kwa Textexpression id"@en ;
           rdfs:comment "An id of the textexpression in the context of the kwa. Corresponds to the maintexts database id (if any) plus some magic numbers" ;
-          knora-base:subjectClassConstraint :textexpression;
+          knora-base:subjectClassConstraint :Textexpression;
           knora-base:objectClassConstraint knora-base:TextValue ;
           salsah-gui:guiElement salsah-gui:SimpleText ;
           salsah-gui:guiAttribute "size=128" ,
@@ -517,7 +546,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
           rdfs:label "Incipit"@de ,
                      "incipit"@en ;
           rdfs:comment "The incipit of the text expression, as found on the textcarrier" ;
-          knora-base:subjectClassConstraint :textexpression;
+          knora-base:subjectClassConstraint :Textexpression;
           knora-base:objectClassConstraint knora-base:TextValue ;
           salsah-gui:guiElement salsah-gui:SimpleText ;
           salsah-gui:guiAttribute "size=128" ,
@@ -528,8 +557,8 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
            rdfs:subPropertyOf knora-base:hasLinkTo ;
            rdfs:label "Realisiert Textkonzept"@de ,                      
                       "Instanciates text-concept"@en ;
-           knora-base:subjectClassConstraint :textexpression;
-           knora-base:objectClassConstraint :textconcept ;                      
+           knora-base:subjectClassConstraint :Textexpression;
+           knora-base:objectClassConstraint :Textconcept ;                      
            salsah-gui:guiElement salsah-gui:Searchbox ;
            salsah-gui:guiAttribute "numprops=2" . 
 
@@ -537,12 +566,13 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                 rdfs:subPropertyOf knora-base:hasLinkToValue ;
                 rdfs:label "Realisiert Textkonzept"@de ,                      
                 	      "Instanciates text-concept"@en ;
-                knora-base:subjectClassConstraint :textexpression ;
-          		knora-base:objectClassConstraint knora-base:LinkValue .                                                 
+                knora-base:subjectClassConstraint :Textexpression ;
+          		knora-base:objectClassConstraint knora-base:LinkValue .
+          		
 
-##############
+############################################
 ## Class TEXTEXPRESSION
-:textexpression  rdf:type owl:Class  ;
+:Textexpression  rdf:type owl:Class  ;
               rdfs:subClassOf :StandoffResource ,  [
 					rdf:type owl:Restriction;
 					owl:onProperty :isTextconceptInstance;
@@ -578,7 +608,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 					salsah-gui:guiOrder "6"^^xsd:nonNegativeInteger] ;
 					
               rdfs:subClassOf knora-base:Resource  ;
-              rdfs:comment "An expression of a concept of a text that can be materialized on various textcarriers as different textmanifests" ;
+              rdfs:comment "An expression of a concept of a text that can be materialized on various textcarriers as different textmanifests." ;
               rdfs:label "Textkonzept"@de ,
                           "text concept"@en  .                           
 
@@ -601,7 +631,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
           rdfs:label "KWA Textmanifest-Id"@de ,
                      "Kwa Textmanifest id"@en ;
           rdfs:comment "An id of the textexpression in the context of the kwa. Corresponds to the texts database id (if any) plus some magic numbers" ;
-          knora-base:subjectClassConstraint :textmanifest;
+          knora-base:subjectClassConstraint :Textmanifest;
           knora-base:objectClassConstraint knora-base:TextValue ;
           salsah-gui:guiElement salsah-gui:SimpleText ;
           salsah-gui:guiAttribute "size=128" ,
@@ -611,7 +641,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 ## Class TEXTMANIFEST       
 ## 
 
-:textmanifest rdf:type owl:Class ;
+:Textmanifest rdf:type owl:Class ;
               rdfs:subClassOf :TextResource   ,				
 				 [
 					rdf:type owl:Restriction;
@@ -634,7 +664,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
 					owl:onProperty :hasKWAPageNo;
 					owl:maxCardinality "1"^^xsd:nonNegativeInteger] ;
 					
-              rdfs:comment "A single manifestation of a text (on a textcarrier or a set of textcarriers)" ;
+              rdfs:comment "A single manifestation of a text (on a textcarrier or a set of textcarriers). Corresponds to a transcription and bears the fulltext. Can be realized on more than one textcarriers in case of the mikrogramme. The relation to the textcarrier is created by standoff tags on the fulltext marking the columns on pages on the textcarrier." ;
               rdfs:label "Textmanifest"@de ,
               "text manifest"@en .               
               
@@ -656,7 +686,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
            rdfs:comment """Sequenznummer in der Reihe der Notate des Textmanifests"""@de ,
                         """Cette \"property\" dénote la position dans un séquence."""@fr ,
                         """This property stands for the position within a set of rdered items (resoucres)"""@en ;
-           knora-base:subjectClassConstraint :column ;
+           knora-base:subjectClassConstraint :Column ;
            knora-base:objectClassConstraint knora-base:IntValue ;
            salsah-gui:guiElement salsah-gui:Spinbox ;
            salsah-gui:guiAttribute "min=0" ,
@@ -666,7 +696,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
            rdfs:subPropertyOf knora-base:hasLinkTo ;
            rdfs:label "Auf Textträger-Seite"@de ,                      
                       "On surface"@en ;
-           knora-base:subjectClassConstraint :column;
+           knora-base:subjectClassConstraint :Column;
            knora-base:objectClassConstraint :Surface ;                      
            salsah-gui:guiElement salsah-gui:Searchbox ;
            salsah-gui:guiAttribute "numprops=2" .
@@ -675,7 +705,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                 rdfs:subPropertyOf knora-base:hasLinkToValue ;
                 rdfs:label "In Textkolumne"@de ,                      
                       		"On surface column"@en ;
-                knora-base:subjectClassConstraint :column ;
+                knora-base:subjectClassConstraint :Column ;
           		knora-base:objectClassConstraint knora-base:LinkValue .
    
           		
@@ -685,7 +715,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                      "page no."@en ;
 
           rdfs:comment "The sequence number of the notation on the page" ;
-          knora-base:subjectClassConstraint :column ;
+          knora-base:subjectClassConstraint :Column ;
           knora-base:objectClassConstraint knora-base:TextValue ;
           salsah-gui:guiElement salsah-gui:SimpleText ;
           salsah-gui:guiAttribute "size=10" ,
@@ -704,7 +734,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                         """Cette \"property\" dénote la position dans un séquence."""@fr ,
                         """This property stands for the position within a set of rdered items (resoucres)"""@en ;
 
-           knora-base:subjectClassConstraint :column ;
+           knora-base:subjectClassConstraint :Column ;
            knora-base:objectClassConstraint knora-base:IntValue ;
            salsah-gui:guiElement salsah-gui:Spinbox ;
            salsah-gui:guiAttribute "min=0" ,
@@ -713,7 +743,7 @@ knora-base:attachedToProject <http://rdfh.ch/projects/0829> .
                                                 
 ##############
 ## Class Column             
-:column rdf:type owl:Class ;
+:Column rdf:type owl:Class ;
               rdfs:subClassOf :StandoffResource ,   
 				 [
 					rdf:type owl:Restriction;

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:textmanifest id="m-EZ-1907-10-17">
+<?xml version="1.0" encoding="UTF-8"?><knora:resources xmlns="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:knora="http://api.knora.org/ontology/knoraXmlImport/v1#" xmlns:kwa="http://api.knora.org/ontology/0829/kwa/xml-import/v1#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://api.knora.org/ontology/0829/kwa/xml-import/v1# ./p0829-kwa.xsd"><kwa:Textmanifest id="m-EZ-1907-10-17">
 		<knora:label>Manifest EZ-1907-10-17: Egerer Zeitung 1907-10-17</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-EZ-1907-10-17</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Egerer Zeitung 1907-10-17</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Egerer Zeitung 1907-10-17</kwa:textresource-fulltext>
-</kwa:textmanifest><kwa:NewspaperIssue id="i-NWB-1907-10-16">
+</kwa:Textmanifest><kwa:NewspaperIssue id="i-NWB-1907-10-16">
             <knora:label>NWB-1907-10-16</knora:label>
             <kwa:hasImprintedDate knoraType="richtext_value">1907-10-16</kwa:hasImprintedDate>
             <kwa:hasKwaId knoraType="richtext_value">i-NWB-1907-10-16</kwa:hasKwaId>
@@ -16,7 +16,7 @@
             <kwa:isIssueOfNewspaper>
             	<kwa:Newspaper knoraType="link_value" linkType="ref" target="d-417"/>
             </kwa:isIssueOfNewspaper>
-</kwa:NewspaperIssue><kwa:column id="s-SchaIbl-1907-10-09-1-1">
+</kwa:NewspaperIssue><kwa:Column id="s-SchaIbl-1907-10-09-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -29,7 +29,7 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-SchaIbl-1907-10-09"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:Surface id="s-EZ-1907-10-17-1">
+</kwa:Column><kwa:Surface id="s-EZ-1907-10-17-1">
  	<knora:label>Surface EZ-1907-10-17 1</knora:label> 	
     <kwa:hasName knoraType="richtext_value">EZ-1907-10-17, S. 1</kwa:hasName>
  	<kwa:imageName knoraType="richtext_value">_</kwa:imageName>
@@ -47,20 +47,20 @@
     	<kwa:Textcarrier knoraType="link_value" linkType="ref" target="i-NWB-1907-10-16"/>
     </kwa:partOfTextcarrier>
     <kwa:surfaceSequenceNo knoraType="int_value">0</kwa:surfaceSequenceNo>                        
-</kwa:Surface><kwa:textexpression id="te-p-1928">
+</kwa:Surface><kwa:Textexpression id="te-p-1928">
     <knora:label>te-p-1: Was ist die Zeitung? (= Auszug aus „Vom Zeitungslesen“)</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">Für Stellenlose sind Zeitungen ein Juwel, ein zweites Labsal.</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1928</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Was ist die Zeitung? (= Auszug aus „Vom Zeitungslesen“)</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-NWB-1907-10-16"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:column id="s-GrGA-1908-02-01-1-1">
+</kwa:Textexpression><kwa:Column id="s-GrGA-1908-02-01-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -73,22 +73,22 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-GrGA-1908-02-01"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:textmanifest id="m-SchaIbl-1907-10-09">
+</kwa:Column><kwa:Textmanifest id="m-SchaIbl-1907-10-09">
 		<knora:label>Manifest SchaIbl-1907-10-09: Schaffhauser Intelligenzblatt 1907-10-09</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-SchaIbl-1907-10-09</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Schaffhauser Intelligenzblatt 1907-10-09</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Schaffhauser Intelligenzblatt 1907-10-09</kwa:textresource-fulltext>
-</kwa:textmanifest><kwa:Newspaper id="d-73">
+</kwa:Textmanifest><kwa:Newspaper id="d-73">
     <knora:label>NFP: Neue Freie Presse</knora:label>
     <kwa:hasDescription knoraType="richtext_value">Neue Freie Presse</kwa:hasDescription>    
     <kwa:hasShortCode knoraType="richtext_value">NFP</kwa:hasShortCode>
     
     <kwa:hasTitle knoraType="richtext_value">Neue Freie Presse</kwa:hasTitle>
-</kwa:Newspaper><kwa:textconcept id="tc-1330">
+</kwa:Newspaper><kwa:Textconcept id="tc-1330">
 <knora:label>Textconcept 1330: Vom Zeitungslesen</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-1330</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Vom Zeitungslesen</kwa:hasTitle>
-</kwa:textconcept><kwa:Surface id="s-SchaIbl-1907-10-09-1">
+</kwa:Textconcept><kwa:Surface id="s-SchaIbl-1907-10-09-1">
  	<knora:label>Surface SchaIbl-1907-10-09 1</knora:label>
  	<kwa:hasName knoraType="richtext_value">SchaIbl-1907-10-09, S. 1</kwa:hasName>
  	<kwa:imageName knoraType="richtext_value">_</kwa:imageName>
@@ -97,25 +97,25 @@
     	<kwa:Textcarrier knoraType="link_value" linkType="ref" target="i-SchaIbl-1907-10-09"/>
     </kwa:partOfTextcarrier>
     <kwa:surfaceSequenceNo knoraType="int_value">0</kwa:surfaceSequenceNo>                        
-</kwa:Surface><kwa:textmanifest id="m-NFP-1907-10-06">
+</kwa:Surface><kwa:Textmanifest id="m-NFP-1907-10-06">
 		<knora:label>Manifest NFP-1907-10-06: Neue Freie Presse 1907-10-06</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-NFP-1907-10-06</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Neue Freie Presse 1907-10-06</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Neue Freie Presse 1907-10-06</kwa:textresource-fulltext>
-</kwa:textmanifest><kwa:textexpression id="te-p-1890">
+</kwa:Textmanifest><kwa:Textexpression id="te-p-1890">
     <knora:label>te-p-1: Vom Zeitungslesen</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">Zeitungen sind wie ein großer, zusammengedrängter, üppiger Schwarm von Vögeln</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1890</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Vom Zeitungslesen</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-EZ-1907-10-17"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:Surface id="s-NFP-1907-10-06-1">
+</kwa:Textexpression><kwa:Surface id="s-NFP-1907-10-06-1">
  	<knora:label>Surface NFP-1907-10-06 1</knora:label>
  	<kwa:hasName knoraType="richtext_value">NFP-1907-10-06, S. 1</kwa:hasName>
  	<kwa:imageName knoraType="richtext_value">_</kwa:imageName>
@@ -124,38 +124,38 @@
     	<kwa:Textcarrier knoraType="link_value" linkType="ref" target="i-NFP-1907-10-06"/>
     </kwa:partOfTextcarrier>
     <kwa:surfaceSequenceNo knoraType="int_value">0</kwa:surfaceSequenceNo>                        
-</kwa:Surface><kwa:textexpression id="te-p-1970">
+</kwa:Surface><kwa:Textexpression id="te-p-1970">
     <knora:label>te-p-1: Vom Zeitungslesen</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">Zeitungen sind wie ein großer, zusammengedrängter, üppiger Schwarm von Vögeln</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1970</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Vom Zeitungslesen</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-SchaIbl-1907-10-09"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:textmanifest id="m-NWB-1907-10-16">
+</kwa:Textexpression><kwa:Textmanifest id="m-NWB-1907-10-16">
 		<knora:label>Manifest NWB-1907-10-16: Neuigkeits-Welt-Blatt 1907-10-16</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-NWB-1907-10-16</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Neuigkeits-Welt-Blatt 1907-10-16</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Neuigkeits-Welt-Blatt 1907-10-16</kwa:textresource-fulltext>
-</kwa:textmanifest><kwa:textexpression id="te-p-1950">
+</kwa:Textmanifest><kwa:Textexpression id="te-p-1950">
     <knora:label>te-p-1: Von den Zeitungen (= Auszug aus „Vom Zeitungslesen“)</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">Für Stellenlose sind Zeitungen ein Juwel, ein zweites Labsal.</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1950</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Von den Zeitungen (= Auszug aus „Vom Zeitungslesen“)</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Tanz-Z--1907-12-24"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:NewspaperIssue id="i-NFP-1907-10-06">
+</kwa:Textexpression><kwa:NewspaperIssue id="i-NFP-1907-10-06">
             <knora:label>NFP-1907-10-06</knora:label>
             <kwa:hasImprintedDate knoraType="richtext_value">1907-10-06</kwa:hasImprintedDate>
             <kwa:hasKwaId knoraType="richtext_value">i-NFP-1907-10-06</kwa:hasKwaId>
@@ -168,20 +168,20 @@
             <kwa:isIssueOfNewspaper>
             	<kwa:Newspaper knoraType="link_value" linkType="ref" target="d-73"/>
             </kwa:isIssueOfNewspaper>
-</kwa:NewspaperIssue><kwa:textexpression id="te-p-1977">
+</kwa:NewspaperIssue><kwa:Textexpression id="te-p-1977">
     <knora:label>te-p-1: Von den Zeitungen (= Auszug aus „Vom Zeitungslesen“)</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">Für Stellenlose sind Zeitungen ein Juwel, ein zweites Labsal.</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1977</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Von den Zeitungen (= Auszug aus „Vom Zeitungslesen“)</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-GrGA-1908-02-01"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:column id="s-Tanz-Z--1907-12-24-1-1">
+</kwa:Textexpression><kwa:Column id="s-Tanz-Z--1907-12-24-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -194,7 +194,7 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Tanz-Z--1907-12-24"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:column id="s-NFP-1907-10-06-1-1">
+</kwa:Column><kwa:Column id="s-NFP-1907-10-06-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -207,7 +207,7 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-NFP-1907-10-06"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:Newspaper id="d-516">
+</kwa:Column><kwa:Newspaper id="d-516">
     <knora:label>GrGA: Graubündner General-Anzeiger</knora:label>
     <kwa:hasDescription knoraType="richtext_value">Graubündner General-Anzeiger</kwa:hasDescription>    
     <kwa:hasShortCode knoraType="richtext_value">GrGA</kwa:hasShortCode>
@@ -219,20 +219,20 @@
     <kwa:hasShortCode knoraType="richtext_value">NWB</kwa:hasShortCode>
     
     <kwa:hasTitle knoraType="richtext_value">Neuigkeits-Welt-Blatt</kwa:hasTitle>
-</kwa:Newspaper><kwa:textexpression id="te-p-900">
+</kwa:Newspaper><kwa:Textexpression id="te-p-900">
     <knora:label>te-p-1: Vom Zeitungslesen</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">Zeitungen sind wie ein großer, zusammengedrängter, üppiger Schwarm von Vögeln</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-900</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Vom Zeitungslesen</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-1330"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-NFP-1907-10-06"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:Surface id="s-Tanz-Z--1907-12-24-1">
+</kwa:Textexpression><kwa:Surface id="s-Tanz-Z--1907-12-24-1">
  	<knora:label>Surface Tanz-Z--1907-12-24 1</knora:label> 	
     <kwa:hasName knoraType="richtext_value">Tanz-Z--1907-12-24, S. 1</kwa:hasName>
  	<kwa:imageName knoraType="richtext_value">_</kwa:imageName>
@@ -267,12 +267,12 @@
             <kwa:isIssueOfMagazine>
             	<kwa:Magazine knoraType="link_value" linkType="ref" target="d-291"/>
             </kwa:isIssueOfMagazine>
-</kwa:MagazineIssue><kwa:textmanifest id="m-Tanz-Z--1907-12-24">
+</kwa:MagazineIssue><kwa:Textmanifest id="m-Tanz-Z--1907-12-24">
 		<knora:label>Manifest Tanz-Z--1907-12-24: Tages-Anzeiger für Stadt und Kanton Zürich 1907-12-24</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-Tanz-Z--1907-12-24</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Tages-Anzeiger für Stadt und Kanton Zürich 1907-12-24</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Tages-Anzeiger für Stadt und Kanton Zürich 1907-12-24</kwa:textresource-fulltext>
-</kwa:textmanifest><kwa:MagazineIssue id="i-Tanz-Z--1907-12-24">
+</kwa:Textmanifest><kwa:MagazineIssue id="i-Tanz-Z--1907-12-24">
             <knora:label>Tanz-Z--1907-12-24</knora:label>
             <kwa:hasImprintedDate knoraType="richtext_value">1907-12-24</kwa:hasImprintedDate>
             <kwa:hasKwaId knoraType="richtext_value">i-Tanz-Z--1907-12-24</kwa:hasKwaId>
@@ -304,7 +304,7 @@
             <kwa:isIssueOfNewspaper>
             	<kwa:Newspaper knoraType="link_value" linkType="ref" target="d-491"/>
             </kwa:isIssueOfNewspaper>
-</kwa:NewspaperIssue><kwa:column id="s-EZ-1907-10-17-1-1">
+</kwa:NewspaperIssue><kwa:Column id="s-EZ-1907-10-17-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -317,25 +317,25 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-EZ-1907-10-17"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:Newspaper id="d-491">
+</kwa:Column><kwa:Newspaper id="d-491">
     <knora:label>SchaIbl: Schaffhauser Intelligenzblatt</knora:label>
     <kwa:hasDescription knoraType="richtext_value">Schaffhauser Intelligenzblatt</kwa:hasDescription>    
     <kwa:hasShortCode knoraType="richtext_value">SchaIbl</kwa:hasShortCode>
      <kwa:hasSubtitle knoraType="richtext_value">Amtliches Publikationsorgan für den Kanton Schaffhausen
 : amtliches Publikationsorgan für den Kanton Schaffhausen</kwa:hasSubtitle>
     <kwa:hasTitle knoraType="richtext_value">Schaffhauser Intelligenzblatt</kwa:hasTitle>
-</kwa:Newspaper><kwa:textmanifest id="m-GrGA-1908-02-01">
+</kwa:Newspaper><kwa:Textmanifest id="m-GrGA-1908-02-01">
 		<knora:label>Manifest GrGA-1908-02-01: Graubündner General-Anzeiger 1908-02-01</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-GrGA-1908-02-01</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Graubündner General-Anzeiger 1908-02-01</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Graubündner General-Anzeiger 1908-02-01</kwa:textresource-fulltext>
-</kwa:textmanifest><kwa:Magazine id="d-291">
+</kwa:Textmanifest><kwa:Magazine id="d-291">
     <knora:label>EZ: Egerer Zeitung</knora:label>
     <kwa:hasDescription knoraType="richtext_value">Egerer Zeitung</kwa:hasDescription>    
     <kwa:hasShortCode knoraType="richtext_value">EZ</kwa:hasShortCode>
     
     <kwa:hasTitle knoraType="richtext_value">Egerer Zeitung</kwa:hasTitle>
-</kwa:Magazine><kwa:column id="s-NWB-1907-10-16-1-1">
+</kwa:Magazine><kwa:Column id="s-NWB-1907-10-16-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -348,7 +348,7 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-NWB-1907-10-16"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:Surface id="s-GrGA-1908-02-01-1">
+</kwa:Column><kwa:Surface id="s-GrGA-1908-02-01-1">
  	<knora:label>Surface GrGA-1908-02-01 1</knora:label>
  	<kwa:hasName knoraType="richtext_value">GrGA-1908-02-01, S. 1</kwa:hasName>
  	<kwa:imageName knoraType="richtext_value">_</kwa:imageName>
@@ -357,34 +357,34 @@
     	<kwa:Textcarrier knoraType="link_value" linkType="ref" target="i-GrGA-1908-02-01"/>
     </kwa:partOfTextcarrier>
     <kwa:surfaceSequenceNo knoraType="int_value">0</kwa:surfaceSequenceNo>                        
-</kwa:Surface><kwa:textconcept id="tc-792">
+</kwa:Surface><kwa:Textconcept id="tc-792">
 <knora:label>Textconcept 792: Die Geduldige</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-792</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Die Geduldige</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-793">
+</kwa:Textconcept><kwa:Textconcept id="tc-793">
 <knora:label>Textconcept 793: Die Tänzerin</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-793</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Die Tänzerin</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-790">
+</kwa:Textconcept><kwa:Textconcept id="tc-790">
 <knora:label>Textconcept 790: Wie schön war’s gestern</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-790</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Wie schön war’s gestern</kwa:hasTitle>
-</kwa:textconcept><kwa:Newspaper id="d-528">
+</kwa:Textconcept><kwa:Newspaper id="d-528">
     <knora:label>PMH: Pragai Magyar Hirlap</knora:label>
     <kwa:hasDescription knoraType="richtext_value">Pragai Magyar Hirlap</kwa:hasDescription>    
     <kwa:hasShortCode knoraType="richtext_value">PMH</kwa:hasShortCode>
     
     <kwa:hasTitle knoraType="richtext_value">Pragai Magyar Hirlap</kwa:hasTitle>
-</kwa:Newspaper><kwa:textconcept id="tc-2456">
+</kwa:Newspaper><kwa:Textconcept id="tc-2456">
 <knora:label>Textconcept 2456: Lany, kinek szemei szepek [SONDERZEICHEN]</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-2456</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Lany, kinek szemei szepek [SONDERZEICHEN]</kwa:hasTitle>
-</kwa:textconcept><kwa:textmanifest id="m-PMH-1926-04-11">
+</kwa:Textconcept><kwa:Textmanifest id="m-PMH-1926-04-11">
 		<knora:label>Manifest PMH-1926-04-11: Pragai Magyar Hirlap 1926-04-11</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-PMH-1926-04-11</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Pragai Magyar Hirlap 1926-04-11</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Pragai Magyar Hirlap 1926-04-11</kwa:textresource-fulltext>
-</kwa:textmanifest><kwa:column id="s-PMH-1926-04-11-1-1">
+</kwa:Textmanifest><kwa:Column id="s-PMH-1926-04-11-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -397,7 +397,7 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-PMH-1926-04-11"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:Surface id="s-PMH-1926-04-11-1">
+</kwa:Column><kwa:Surface id="s-PMH-1926-04-11-1">
  	<knora:label>Surface PMH-1926-04-11 1</knora:label>
  	<kwa:hasName knoraType="richtext_value">PMH-1926-04-11, S. 1</kwa:hasName>
  	<kwa:imageName knoraType="richtext_value">_</kwa:imageName>
@@ -419,60 +419,60 @@
             <kwa:isIssueOfNewspaper>
             	<kwa:Newspaper knoraType="link_value" linkType="ref" target="d-528"/>
             </kwa:isIssueOfNewspaper>
-</kwa:NewspaperIssue><kwa:textexpression id="te-p-1986">
+</kwa:NewspaperIssue><kwa:Textexpression id="te-p-1986">
     <knora:label>te-p-1: Lany, kinek szemei szepek [SONDERZEICHEN]</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">INCIPIT IST NULL!</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-1986</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Lany, kinek szemei szepek [SONDERZEICHEN]</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-2456"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-2456"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-PMH-1926-04-11"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:textconcept id="tc-791">
+</kwa:Textexpression><kwa:Textconcept id="tc-791">
 <knora:label>Textconcept 791: Wie sich’s gehört</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-791</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Wie sich’s gehört</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-796">
+</kwa:Textconcept><kwa:Textconcept id="tc-796">
 <knora:label>Textconcept 796: Entführung</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-796</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Entführung</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-797">
+</kwa:Textconcept><kwa:Textconcept id="tc-797">
 <knora:label>Textconcept 797: Das Dienstmädchen</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-797</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Das Dienstmädchen</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-794">
+</kwa:Textconcept><kwa:Textconcept id="tc-794">
 <knora:label>Textconcept 794: Die junge Wohltäterin</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-794</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Die junge Wohltäterin</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-795">
+</kwa:Textconcept><kwa:Textconcept id="tc-795">
 <knora:label>Textconcept 795: Sirene</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-795</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Sirene</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-789">
+</kwa:Textconcept><kwa:Textconcept id="tc-789">
 <knora:label>Textconcept 789: Ich und sie</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-789</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Ich und sie</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-787">
+</kwa:Textconcept><kwa:Textconcept id="tc-787">
 <knora:label>Textconcept 787: Manon</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-787</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Manon</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-788">
+</kwa:Textconcept><kwa:Textconcept id="tc-788">
 <knora:label>Textconcept 788: Die Falsche</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-788</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Die Falsche</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-786">
+</kwa:Textconcept><kwa:Textconcept id="tc-786">
 <knora:label>Textconcept 786: Genoveva</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-786</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Genoveva</kwa:hasTitle>
-</kwa:textconcept><kwa:textconcept id="tc-784">
+</kwa:Textconcept><kwa:Textconcept id="tc-784">
 <knora:label>Textconcept 784: Buchdeckelgedicht</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-784</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Buchdeckelgedicht</kwa:hasTitle>
-</kwa:textconcept><kwa:MagazineIssue id="i-Bima-1916-06-20">
+</kwa:Textconcept><kwa:MagazineIssue id="i-Bima-1916-06-20">
             <knora:label>Bima-1916-06-20</knora:label>
             <kwa:hasImprintedDate knoraType="richtext_value">1916-06-20</kwa:hasImprintedDate>
             <kwa:hasKwaId knoraType="richtext_value">i-Bima-1916-06-20</kwa:hasKwaId>
@@ -485,20 +485,20 @@
             <kwa:isIssueOfMagazine>
             	<kwa:Magazine knoraType="link_value" linkType="ref" target="d-66"/>
             </kwa:isIssueOfMagazine>
-</kwa:MagazineIssue><kwa:textexpression id="te-p-829">
+</kwa:MagazineIssue><kwa:Textexpression id="te-p-829">
     <knora:label>te-p-1: Der Handelsmann</knora:label>
     <kwa:hasIncipit knoraType="richtext_value">„Unser Vater, der du bist im Himmel, geheiligt sei dein Name</kwa:hasIncipit>
     <kwa:hasKwaExpressionId knoraType="richtext_value">te-p-829</kwa:hasKwaExpressionId>
     <kwa:hasTitle knoraType="richtext_value">Der Handelsmann</kwa:hasTitle>
     <kwa:isTextconceptInstance>
-    	<kwa:textconcept knoraType="link_value" linkType="ref" target="tc-1255"/>
+    	<kwa:Textconcept knoraType="link_value" linkType="ref" target="tc-1255"/>
     </kwa:isTextconceptInstance>
     <kwa:standoffResourceEndIndex knoraType="int_value">0</kwa:standoffResourceEndIndex>
     <kwa:standoffResourceStartIndex knoraType="int_value">0</kwa:standoffResourceStartIndex>
     <kwa:standoffResourceTextResourceReference>
     	<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Bima-1916-06-20"/>
     </kwa:standoffResourceTextResourceReference>
-</kwa:textexpression><kwa:column id="s-Bima-1916-06-20-1-1">
+</kwa:Textexpression><kwa:Column id="s-Bima-1916-06-20-1-1">
  <knora:label>PP-1933-09-24-1-1</knora:label>
  <kwa:notationSequenceNo knoraType="int_value">0</kwa:notationSequenceNo>
  <kwa:onSurface>
@@ -511,7 +511,7 @@
  		<kwa:TextResource knoraType="link_value" linkType="ref" target="m-Bima-1916-06-20"/>
  </kwa:standoffResourceTextResourceReference>
  <kwa:surfaceNotationNo knoraType="richtext_value">0</kwa:surfaceNotationNo>
-</kwa:column><kwa:Magazine id="d-66">
+</kwa:Column><kwa:Magazine id="d-66">
     <knora:label>Bima: Der Bildermann</knora:label>
     <kwa:hasDescription knoraType="richtext_value">Der Bildermann</kwa:hasDescription>    
     <kwa:hasShortCode knoraType="richtext_value">Bima</kwa:hasShortCode>
@@ -526,13 +526,13 @@
     	<kwa:Textcarrier knoraType="link_value" linkType="ref" target="i-Bima-1916-06-20"/>
     </kwa:partOfTextcarrier>
     <kwa:surfaceSequenceNo knoraType="int_value">0</kwa:surfaceSequenceNo>                        
-</kwa:Surface><kwa:textconcept id="tc-1255">
+</kwa:Surface><kwa:Textconcept id="tc-1255">
 <knora:label>Textconcept 1255: Der Handelsmann</knora:label>
 <kwa:hasKwaConceptId knoraType="richtext_value">tc-1255</kwa:hasKwaConceptId>
 <kwa:hasTitle knoraType="richtext_value">Der Handelsmann</kwa:hasTitle>
-</kwa:textconcept><kwa:textmanifest id="m-Bima-1916-06-20">
+</kwa:Textconcept><kwa:Textmanifest id="m-Bima-1916-06-20">
 		<knora:label>Manifest Bima-1916-06-20: Der Bildermann 1916-06-20</knora:label>                       
 		<kwa:hasKwaManifestId knoraType="richtext_value">m-Bima-1916-06-20</kwa:hasKwaManifestId>
 		<kwa:hasTitle knoraType="richtext_value">Der Bildermann 1916-06-20</kwa:hasTitle>
 		<kwa:textresource-fulltext knoraType="richtext_value">Der Bildermann 1916-06-20</kwa:textresource-fulltext>
-</kwa:textmanifest></knora:resources>
+</kwa:Textmanifest></knora:resources>

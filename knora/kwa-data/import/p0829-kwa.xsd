@@ -7,6 +7,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="hasImprintedDate"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
@@ -29,6 +30,29 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
     <xs:complexType name="Book_linkValueType">
         <xs:sequence>
             <xs:element type="knoraXmlImport:linkValueType" name="Book"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Column">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="knoraXmlImport:resourceType">
+                    <xs:sequence>
+                        <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="notationSequenceNo"/>
+                        <xs:element type="Surface_linkValueType" maxOccurs="1" minOccurs="1" name="onSurface"/>
+                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="onSurfaceSequenceNo"/>
+                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceEndIndex"/>
+                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceStartIndex"/>
+                        <xs:element type="TextResource_linkValueType" maxOccurs="1" minOccurs="1" name="standoffResourceTextResourceReference"/>
+                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="surfaceNotationNo"/>
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="Column_linkValueType">
+        <xs:sequence>
+            <xs:element type="knoraXmlImport:linkValueType" name="Column"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element name="DatingHint">
@@ -78,6 +102,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="unbounded" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="hasImprintedDate"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
@@ -109,6 +134,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAVolume"/>
@@ -134,6 +160,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAVolume"/>
@@ -180,6 +207,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="unbounded" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="hasImprintedDate"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
@@ -232,6 +260,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="unbounded" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="hasImprintedDate"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
@@ -286,6 +315,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="hasImprintedDate"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
@@ -414,6 +444,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                 <xs:extension base="knoraXmlImport:resourceType">
                     <xs:sequence>
                         <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
+                        <xs:element type="Textexpression_linkValueType" maxOccurs="unbounded" minOccurs="0" name="carriesTextexpression"/>
                         <xs:element type="knoraXmlImport:dateValueType" maxOccurs="unbounded" minOccurs="0" name="hasDate"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasDescription"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAPageNo"/>
@@ -433,30 +464,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
             <xs:element type="knoraXmlImport:linkValueType" name="Textcarrier"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element name="column">
-        <xs:complexType>
-            <xs:complexContent>
-                <xs:extension base="knoraXmlImport:resourceType">
-                    <xs:sequence>
-                        <xs:element maxOccurs="1" minOccurs="1" ref="knoraXmlImport:label"/>
-                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="notationSequenceNo"/>
-                        <xs:element type="Surface_linkValueType" maxOccurs="1" minOccurs="1" name="onSurface"/>
-                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="onSurfaceSequenceNo"/>
-                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceEndIndex"/>
-                        <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceStartIndex"/>
-                        <xs:element type="TextResource_linkValueType" maxOccurs="1" minOccurs="1" name="standoffResourceTextResourceReference"/>
-                        <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="surfaceNotationNo"/>
-                    </xs:sequence>
-                </xs:extension>
-            </xs:complexContent>
-        </xs:complexType>
-    </xs:element>
-    <xs:complexType name="column_linkValueType">
-        <xs:sequence>
-            <xs:element type="knoraXmlImport:linkValueType" name="column"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element name="textconcept">
+    <xs:element name="Textconcept">
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="knoraXmlImport:resourceType">
@@ -469,12 +477,12 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="textconcept_linkValueType">
+    <xs:complexType name="Textconcept_linkValueType">
         <xs:sequence>
-            <xs:element type="knoraXmlImport:linkValueType" name="textconcept"/>
+            <xs:element type="knoraXmlImport:linkValueType" name="Textconcept"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element name="textexpression">
+    <xs:element name="Textexpression">
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="knoraXmlImport:resourceType">
@@ -485,7 +493,7 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="0" name="hasKWAVolume"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="unbounded" minOccurs="0" name="hasKwaExpressionId"/>
                         <xs:element type="knoraXmlImport:richtextValueType" maxOccurs="1" minOccurs="1" name="hasTitle"/>
-                        <xs:element type="textconcept_linkValueType" maxOccurs="unbounded" minOccurs="0" name="is-textconcept-instance"/>
+                        <xs:element type="Textconcept_linkValueType" maxOccurs="unbounded" minOccurs="0" name="isTextconceptInstance"/>
                         <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceEndIndex"/>
                         <xs:element type="knoraXmlImport:intValueType" maxOccurs="1" minOccurs="1" name="standoffResourceStartIndex"/>
                         <xs:element type="TextResource_linkValueType" maxOccurs="1" minOccurs="1" name="standoffResourceTextResourceReference"/>
@@ -494,12 +502,12 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="textexpression_linkValueType">
+    <xs:complexType name="Textexpression_linkValueType">
         <xs:sequence>
-            <xs:element type="knoraXmlImport:linkValueType" name="textexpression"/>
+            <xs:element type="knoraXmlImport:linkValueType" name="Textexpression"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element name="textmanifest">
+    <xs:element name="Textmanifest">
         <xs:complexType>
             <xs:complexContent>
                 <xs:extension base="knoraXmlImport:resourceType">
@@ -515,9 +523,9 @@ vc:minVersion="1.0" targetNamespace="http://api.knora.org/ontology/0829/kwa/xml-
             </xs:complexContent>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="textmanifest_linkValueType">
+    <xs:complexType name="Textmanifest_linkValueType">
         <xs:sequence>
-            <xs:element type="knoraXmlImport:linkValueType" name="textmanifest"/>
+            <xs:element type="knoraXmlImport:linkValueType" name="Textmanifest"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>
