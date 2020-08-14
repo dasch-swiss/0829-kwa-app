@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {GravsearchServiceService} from "../../services/gravsearch-service.service";
+import { Queries } from '../../queries/queries';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'kwa-search-root',
@@ -35,10 +38,33 @@ export class SearchRootComponent implements OnInit {
     };
     filterRows = Array<any>(1);
     chosenFilters = [];
-    searchResults = Array<any>(50);
-  constructor() { }
+    searchResults = [];
+    queries: any = (new Queries).queries;
+
+  constructor(
+      private gravsearchServiceService: GravsearchServiceService
+  ) { }
 
   ngOnInit(): void {
+      console.log( 'initiate search' );
+      this.gravsearchServiceService.sendGravsearchRequest( this.queries.noFilter.body )
+          .pipe(
+              map((response) => {
+                  console.log( response );
+                  return (response.body['@graph'] as any).map(entry => {
+                      // here the structure of the array is created from the response
+                      return {
+                          title: entry['kwa:hasTitle']['knora-api:valueAsString'],
+                          conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString'],
+                      };
+                  });
+              }))
+          .subscribe(
+              transformedEntries => {
+                  console.log( transformedEntries );
+                  this.searchResults = transformedEntries;
+              }, error => console.log( error )
+          )
   }
 
     updateDefinedFilterArray( key: string, value: string, index: number ) {

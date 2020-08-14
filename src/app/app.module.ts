@@ -7,6 +7,8 @@ import {SearchModuleModule} from "./search-module/search-module.module";
 import {MatSelectModule} from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {HttpClientModule, HTTP_INTERCEPTORS, HttpClient} from '@angular/common/http';
+
 
 const modules = [
     BrowserModule,
@@ -14,7 +16,8 @@ const modules = [
     SearchModuleModule,
     MatSelectModule,
     BrowserAnimationsModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    HttpClientModule
 ];
 
 @NgModule({
