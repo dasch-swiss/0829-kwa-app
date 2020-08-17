@@ -56,9 +56,21 @@ export class SearchRootComponent implements OnInit {
                       return {
                           title: entry['kwa:hasTitle']['knora-api:valueAsString'],
                           conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString'],
-                      };
-                  });
-              }))
+                          expressions: (entry['knora-api:hasIncomingLinkValue'] ? 
+                          					( Array.isArray(entry['knora-api:hasIncomingLinkValue']) ? 
+                          					(entry['knora-api:hasIncomingLinkValue'] as any).map(expression => {
+                          					  //TODO: move mapping the expression into function
+                          						return {
+                          								title: expression['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
+                          								incipit: expression['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString']                          							
+                          								};
+                          								}) :
+                          								[{
+                          									title: entry['knora-api:hasIncomingLinkValue']['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
+                          									incipit: entry['knora-api:hasIncomingLinkValue']['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString']                          							                          									
+                          								}])
+                          								: undefined)
+                          }})}))                                                
           .subscribe(
               transformedEntries => {
                   console.log( transformedEntries );
