@@ -56,20 +56,13 @@ export class SearchRootComponent implements OnInit {
                       return {
                           title: entry['kwa:hasTitle']['knora-api:valueAsString'],
                           conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString'],
-                          expressions: (entry['knora-api:hasIncomingLinkValue'] ? 
+                          // expressions can be an array or an object or undefined!
+                          // we want it to be an array in any case
+                          expressions: ( entry['knora-api:hasIncomingLinkValue'] ? 
                           					( Array.isArray(entry['knora-api:hasIncomingLinkValue']) ? 
-                          					(entry['knora-api:hasIncomingLinkValue'] as any).map(expression => {
-                          					  //TODO: move mapping the expression into function
-                          						return {
-                          								title: expression['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
-                          								incipit: expression['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString']                          							
-                          								};
-                          								}) :
-                          								[{
-                          									title: entry['knora-api:hasIncomingLinkValue']['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
-                          									incipit: entry['knora-api:hasIncomingLinkValue']['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString']                          							                          									
-                          								}])
-                          								: undefined)
+                          					( entry['knora-api:hasIncomingLinkValue'] as any).map(expression => {return this.mapExpression(expression);}) 
+                          								: [this.mapExpression(entry['knora-api:hasIncomingLinkValue'])])
+                          								: [])
                           }})}))                                                
           .subscribe(
               transformedEntries => {
@@ -78,6 +71,26 @@ export class SearchRootComponent implements OnInit {
               }, error => console.log( error )
           )
   }
+  
+  
+   // maps a text expression.
+   mapExpression( expression: any) : any {
+   	   return {   	   
+				title: expression['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
+				incipit: expression['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString'],
+				// here comes the fun part
+				textcarrier: this.mapTextcarrier( expression['knora-api:linkValueHasSource']['kwa:standoffResourceTextResourceReferenceValue']['knora-api:linkValueHasTarget']['knora-api:hasIncomingLinkValue']['knora-api:linkValueHasSource']['kwa:onSurfaceValue']['knora-api:linkValueHasTarget']['kwa:partOfTextcarrierValue']['knora-api:linkValueHasTarget'])				
+			}
+		}
+   	   
+		
+	mapTextcarrier ( textcarrier: any) : any {
+		return {
+				imprintedDate : textcarrier['kwa:hasImprintedDate']['knora-api:valueAsString'],
+				title : textcarrier['kwa:hasTitle']['knora-api:valueAsString'],
+				number : textcarrier['kwa:hasNumber']['knora-api:valueAsString']				
+		}
+	}	
 
     updateDefinedFilterArray( key: string, value: string, index: number ) {
       this.chosenFilters[ index ] = this.chosenFilters[ index ] ? this.chosenFilters[ index ] : {};

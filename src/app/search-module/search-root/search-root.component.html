@@ -64,11 +64,13 @@
         <mat-card-header>
             <div mat-card-avatar class="example-header-image"> {{ i }} </div>
             <mat-card-title> {{ searchResult.title }} </mat-card-title>
-            <mat-card-subtitle> {{ searchResult.conceptId }} </mat-card-subtitle>
+            <mat-card-subtitle> {{ searchResult.expressions[0].incipit }} </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
             <p *ngFor="let expression of searchResult.expressions">
-                {{ expression.title }} (icpt: {{expression.incipit}})
+                {{ expression.textcarrier.title}}, {{expression.textcarrier.number}},  {{expression.textcarrier.imprintedDate}}
+                <span *ngIf="expression.title != searchResult.title">&nbsp;('{{ expression.title }}')</span>
+                <span *ngIf="expression.incipit != searchResult.expressions[0].incipit">&nbsp;(icpt: '{{expression.incipit}}')</span>                
             </p>
         </mat-card-content>
         <mat-card-actions>
