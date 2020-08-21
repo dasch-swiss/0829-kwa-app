@@ -7,7 +7,7 @@
 
             <mat-form-field >
                 <mat-label>Filter Name</mat-label>
-                <mat-select>
+                <mat-select value="{{ row?.filter }}">
                     <mat-option
                         *ngFor="let filter of filters"
                         [value]="filter.value"
@@ -19,11 +19,11 @@
 
             <mat-form-field >
                 <mat-label>Operator</mat-label>
-                <mat-select>
-                    <mat-option *ngFor="let filter of operators.string"
-                                [value]="filter.operator"
-                                (click)="updateDefinedFilterArray( 'operator', filter.operator, i )">
-                        {{ filter.displayed }}
+                <mat-select value="{{ row?.displayed }}">
+                    <mat-option *ngFor="let operator of operators.string"
+                                [value]="operator.operator"
+                                (click)="updateDefinedFilterArray( 'operator', operator.operator, i )">
+                        {{ operator?.displayed }}
                     </mat-option>
                 </mat-select>
             </mat-form-field>
@@ -31,7 +31,7 @@
             <mat-form-field >
                 <mat-label>Searchterm</mat-label>
                 <input #inputForm
-                    matInput
+                    matInput value="{{row?.searchTerm }}"
                     (keyup)="updateDefinedFilterArray( 'searchTerm', inputForm.value, i )">
             </mat-form-field>
 
@@ -39,7 +39,7 @@
                 mat-icon-button
                 *ngIf="filterRows.length > 1"
                 type="button"
-                (click)="filterRows.splice( i, 1 ) && chosenFilters.splice( i, 1 )">
+                (click)="filterRows.splice( i, 1 ) && chosenFilters.splice( i, 1 ) && updateUrlParams()">
                 <mat-icon>close</mat-icon>
             </button>
 
@@ -70,7 +70,7 @@
             <p *ngFor="let expression of searchResult.expressions">
                 {{ expression.textcarrier.title}}, {{expression.textcarrier.number}},  {{expression.textcarrier.imprintedDate}}
                 <span *ngIf="expression.title != searchResult.title">&nbsp;('{{ expression.title }}')</span>
-                <span *ngIf="expression.incipit != searchResult.expressions[0].incipit">&nbsp;(icpt: '{{expression.incipit}}')</span>                
+                <span *ngIf="expression.incipit != searchResult.expressions[0].incipit">&nbsp;(icpt: '{{expression.incipit}}')</span>
             </p>
         </mat-card-content>
         <mat-card-actions>
