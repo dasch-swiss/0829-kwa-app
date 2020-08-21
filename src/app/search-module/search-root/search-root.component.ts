@@ -55,7 +55,7 @@ export class SearchRootComponent implements OnInit {
                       // here the structure of the array is created from the response
                       return {
                           title: entry['kwa:hasTitle']['knora-api:valueAsString'],
-                          conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString'],
+                          conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString']
                       };
                   });
               }))
