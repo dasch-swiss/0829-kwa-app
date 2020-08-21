@@ -55,6 +55,12 @@ export class SearchRootComponent implements OnInit {
                       // here the structure of the array is created from the response
                       return {
                           title: entry['kwa:hasTitle']['knora-api:valueAsString'],
+<<<<<<< HEAD
+                          conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString']
+                      };
+                  });
+              }))
+=======
                           conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString'],
                           // expressions can be an array or an object or undefined!
                           // we want it to be an array in any case
@@ -64,6 +70,7 @@ export class SearchRootComponent implements OnInit {
                           								: [this.mapExpression(entry['knora-api:hasIncomingLinkValue'])])
                           								: [])
                           }})}))                                                
+>>>>>>> a1dc18509d0fd522df7739edde538aeebd0dd068
           .subscribe(
               transformedEntries => {
                   console.log( transformedEntries );
