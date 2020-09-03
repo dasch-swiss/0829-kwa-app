@@ -59,6 +59,8 @@
 
         {{ '}' }}
         ORDER by ?conceptTitle
+
+        OFFSET {{ offset }}
     </ng-template>
 
     <div *ngTemplateOutlet="myTemplateRef" >
@@ -146,6 +148,8 @@
             <button mat-button>Hide</button>
         </mat-card-actions>
     </mat-card>
+
+    <mat-spinner style=" margin: 0 auto; display: table; margin-top: 15px;"></mat-spinner>
 
 </div>
 

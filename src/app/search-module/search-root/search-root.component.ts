@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
 import {GravsearchServiceService} from "../../services/gravsearch-service.service";
 import {map} from 'rxjs/operators';
 import {ActivatedRoute, Router} from "@angular/router";
@@ -9,12 +9,32 @@ import {ActivatedRoute, Router} from "@angular/router";
     styleUrls: ['./search-root.component.scss']
 })
 export class SearchRootComponent implements OnInit, AfterViewInit {
+    @HostListener("window:scroll", ["$event"])
+    onWindowScroll() {
+        //In chrome and some browser scroll is given to body tag
+        let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
+        let max = document.documentElement.scrollHeight;
+        // pos/max will give you the distance between scroll bottom and and bottom of screen in percentage.
+        // console.log('scroll', pos, max);
+        if( max - pos < 5 && !this.alreadyQueried )   {
+            // console.log( 'reached bottom' );
+            this.alreadyQueried = true;
+            this.offset += 1;
+            setTimeout(() => { // some time needed until template is rendered with updated variables
+                this.sendGravSearchQuery( true );
+            }, 500);
+
+        }
+    }
     constants = new constants();
     inputInformation = new inputInformation();
     filterRows = Array<any>(1);
     chosenFilters = [];
     searchResults = [];
     firstExampleFilter = '';
+    offset = 0;
+    spinnerIsLoading = false;
+    alreadyQueried = false;
     @ViewChild('myTemplateRef') myTemplate;
 
     constructor(
@@ -28,7 +48,8 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
         this.sendGravSearchQuery();
     }
 
-    sendGravSearchQuery() {
+    sendGravSearchQuery( concatenate?: boolean ) {
+        this.spinnerIsLoading = true;
         this.gravsearchServiceService.sendGravsearchRequest( this.myTemplate.elementRef.nativeElement.nextSibling.data )
             .pipe(
                 map((response) => {
@@ -54,8 +75,17 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             .subscribe(
                 transformedEntries => {
                     console.log(transformedEntries);
-                    this.searchResults = transformedEntries;
-                }, error => console.log(error)
+                    this.spinnerIsLoading = false;
+                    this.alreadyQueried = false;
+                    if ( concatenate ) {
+                        this.searchResults = this.searchResults.concat( transformedEntries );
+                    } else {
+                        this.searchResults = transformedEntries;
+                    }
+                }, error => {
+                    console.log(error);
+                    this.spinnerIsLoading = false;
+                }
             );
     }
 
@@ -132,7 +162,6 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             this.sendGravSearchQuery();
         }, 500);
     }
-
 }
 
 class inputInformation {
