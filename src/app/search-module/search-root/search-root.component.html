@@ -1,3 +1,70 @@
+<div style="display: none">
+    <ng-template #myTemplateRef >
+        PREFIX knora-api: <http://api.knora.org/ontology/knora-api/simple/v2#>
+        PREFIX walser: <http://0.0.0.0:3333/ontology/0829/kwa/simple/v2#>
+
+        CONSTRUCT {{ '{' }}
+        ?textconcept knora-api:isMainResource true;
+            walser:hasTitle ?conceptTitle;
+            walser:hasKwaConceptId ?conceptId.
+
+		?textexpression walser:hasTitle ?title ;
+		    walser:hasIncipit ?incipit ;
+		    walser:isTextconceptInstance ?textconcept;
+        	walser:standoffResourceTextResourceReference ?textmanifest .
+
+        ?textmanifest walser:hasKwaManifestId ?manifestId.
+
+        ?column walser:standoffResourceTextResourceReference ?textmanifest ;
+                walser:onSurface ?surface .
+
+        ?surface walser:partOfTextcarrier ?textcarrier.
+
+        ?textcarrier walser:hasName ?textcarrierName.
+
+
+        ?textcarrier walser:hasNumber ?issueNumber;
+                         walser:hasTitle ?issueTitle;
+                         walser:hasImprintedDate ?imprintedDate.
+
+
+        {{ '}' }}
+        WHERE
+        {{ '{' }}
+        ?textconcept walser:hasTitle ?conceptTitle;
+                     walser:hasKwaConceptId ?conceptId.
+
+		?textexpression a walser:Textexpression ;
+        	walser:hasTitle ?title ;
+        	walser:hasIncipit ?incipit ;
+        	walser:isTextconceptInstance ?textconcept;
+	        walser:standoffResourceTextResourceReference ?textmanifest .
+
+
+	      ?textmanifest walser:hasKwaManifestId ?manifestId.
+
+        ?column walser:standoffResourceTextResourceReference ?textmanifest ;
+                walser:onSurface ?surface .
+
+        ?surface walser:partOfTextcarrier ?textcarrier.
+
+        ?textcarrier walser:hasName ?textcarrierName.
+
+        OPTIONAL {{ '{' }}
+        ?textcarrier walser:hasNumber ?issueNumber;
+        walser:hasTitle ?issueTitle;
+        walser:hasImprintedDate ?imprintedDate.
+        {{ '}' }}
+
+        {{ '}' }}
+        ORDER by ?conceptTitle
+    </ng-template>
+
+    <div *ngTemplateOutlet="myTemplateRef" >
+
+    </div>
+</div>
+
 
 <div style="width:100%; margin-top: 20px; " >
     <div style="margin: 0 auto; display: table;">
@@ -9,7 +76,7 @@
                 <mat-label>Filter Name</mat-label>
                 <mat-select value="{{ row?.filter }}">
                     <mat-option
-                        *ngFor="let filter of filters"
+                        *ngFor="let filter of constants.filters"
                         [value]="filter.value"
                         (click)="updateDefinedFilterArray( 'filter', filter.value, i )" >
                         {{ filter.viewValue }}
@@ -20,7 +87,7 @@
             <mat-form-field >
                 <mat-label>Operator</mat-label>
                 <mat-select value="{{ row?.displayed }}">
-                    <mat-option *ngFor="let operator of operators.string"
+                    <mat-option *ngFor="let operator of constants.operators.string"
                                 [value]="operator.operator"
                                 (click)="updateDefinedFilterArray( 'operator', operator.operator, i )">
                         {{ operator?.displayed }}
