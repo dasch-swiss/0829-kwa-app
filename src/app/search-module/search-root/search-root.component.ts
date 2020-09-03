@@ -2,7 +2,6 @@ import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/
 import {GravsearchServiceService} from "../../services/gravsearch-service.service";
 import { map } from 'rxjs/operators';
 import {ActivatedRoute, Router} from "@angular/router";
-import { QueryTemplateComponent } from "../query-template/query-template.component";
 
 @Component({
   selector: 'kwa-search-root',
@@ -14,7 +13,6 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
     filterRows = Array<any>(1);
     chosenFilters = [];
     searchResults = [];
-    queryTemplate = new QueryTemplateComponent();
     @ViewChild('myTemplateRef') myTemplate;
     test = 'testStringVariable';
   constructor(

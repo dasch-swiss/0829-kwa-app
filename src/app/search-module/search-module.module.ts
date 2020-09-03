@@ -13,7 +13,6 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import {GravsearchServiceService} from "../services/gravsearch-service.service";
-import { QueryTemplateComponent } from './query-template/query-template.component';
 
 const modules = [
     MatSelectModule,
@@ -26,7 +25,7 @@ const modules = [
 ];
 
 @NgModule({
-  declarations: [SearchRootComponent, QueryTemplateComponent],
+  declarations: [ SearchRootComponent ],
     imports: [
         [
             CommonModule,
