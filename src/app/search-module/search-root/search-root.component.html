@@ -1,7 +1,6 @@
 <div style="display: none">
     <ng-template #myTemplateRef >
-        PREFIX knora-api: <http://api.knora.org/ontology/knora-api/simple/v2#>
-        PREFIX walser: <http://0.0.0.0:3333/ontology/0829/kwa/simple/v2#>
+        {{ inputInformation.PREFIXES.allPrefixed }}
 
         CONSTRUCT {{ '{' }}
         ?textconcept knora-api:isMainResource true;
@@ -55,6 +54,8 @@
         walser:hasTitle ?issueTitle;
         walser:hasImprintedDate ?imprintedDate.
         {{ '}' }}
+
+        {{ firstExampleFilter }}
 
         {{ '}' }}
         ORDER by ?conceptTitle
@@ -118,7 +119,7 @@
             <mat-icon>add</mat-icon>
         </button>
 
-        <button mat-button style="float: right">
+        <button mat-button style="float: right" (click)="performSearch()">
             <mat-icon>search</mat-icon>
         </button>
 
