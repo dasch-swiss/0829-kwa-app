@@ -112,27 +112,33 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             title: expression['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
             incipit: expression['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString'],
             // here comes the fun part
-            textcarrier: 'test'
-                // this.mapTextcarrier(expression['knora-api:linkValueHasSource']
-                // ['kwa:standoffResourceTextResourceReferenceValue']
-                // ['knora-api:linkValueHasTarget']
-                // ['knora-api:hasIncomingLinkValue']
-                // ['knora-api:linkValueHasSource']
-                // ['kwa:onSurfaceValue']
-                // ['knora-api:linkValueHasTarget']
-                // ['kwa:partOfTextcarrierValue']
-                // ['knora-api:linkValueHasTarget'])
+            textcarrier: 
+                 this.mapTextcarrier(expression['knora-api:linkValueHasSource']
+                 ['kwa:standoffResourceTextResourceReferenceValue']
+                 ['knora-api:linkValueHasTarget']
+                 ['knora-api:hasIncomingLinkValue']
+                 ['knora-api:linkValueHasSource']
+                 ['kwa:onSurfaceValue']
+                 ['knora-api:linkValueHasTarget']
+                 ['kwa:partOfTextcarrierValue']
+                 ['knora-api:linkValueHasTarget'])
         }
     }
-
-
+    
     mapTextcarrier(textcarrier: any): any {
         return {
-            imprintedDate: textcarrier['kwa:hasImprintedDate']['knora-api:valueAsString'],
-            title: textcarrier['kwa:hasTitle']['knora-api:valueAsString'],
-            number: textcarrier['kwa:hasNumber']['knora-api:valueAsString']
+            imprintedDate: this.mapStringValueIfThere(textcarrier['kwa:hasImprintedDate']),
+            title: this.mapStringValueIfThere(textcarrier['kwa:hasTitle']),
+            number: this.mapStringValueIfThere(textcarrier['kwa:hasNumber'])
         }
     }
+    
+    // returns the string value of a value object if there, or an empty string if not.
+    mapStringValueIfThere(valueObject)
+    {
+    	return valueObject ? valueObject['knora-api:valueAsString'] : '';
+    }
+    
 
     updateDefinedFilterArray(key: string, value: string, index: number) {
         this.chosenFilters[index] = this.chosenFilters[index] ? this.chosenFilters[index] : {};
