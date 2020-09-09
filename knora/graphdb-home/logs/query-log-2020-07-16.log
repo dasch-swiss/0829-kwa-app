@@ -1,0 +1,45 @@
+[INFO ] 2020-07-16 14:00:10,166 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Incoming update:
+prefix luc: <http://www.ontotext.com/owlim/lucene#>
+
+INSERT DATA {
+	luc:include luc:setParam "literal" .
+	luc:index luc:setParam "literal" .
+	luc:languages luc:setParam "" .
+	luc:moleculeSize luc:setParam "0" .
+	luc:useRDFRank luc:setParam "no" .
+	luc:fullTextSearchIndex luc:createIndex "true" .
+}
+[INFO ] 2020-07-16 14:00:11,982 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Incoming update:
+
+                DROP ALL
+            
+[INFO ] 2020-07-16 14:00:14,474 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:14,847 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:15,864 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:19,765 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Incoming update:
+PREFIX luc: <http://www.ontotext.com/owlim/lucene#>
+INSERT DATA { luc:fullTextSearchIndex luc:updateIndex _:b1 . }
+                    
+[INFO ] 2020-07-16 14:00:20,246 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:23,815 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:24,494 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:27,422 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:29,314 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:30,004 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:30,435 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:30,786 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Parallel mode requested but it is disabled globally. Using serial mode instead.
+[INFO ] 2020-07-16 14:00:32,451 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Incoming update:
+prefix luc: <http://www.ontotext.com/owlim/lucene#>
+
+INSERT DATA {
+	luc:include luc:setParam "literal" .
+	luc:index luc:setParam "literal" .
+	luc:languages luc:setParam "" .
+	luc:moleculeSize luc:setParam "0" .
+	luc:useRDFRank luc:setParam "no" .
+	luc:fullTextSearchIndex luc:createIndex "true" .
+}
+[INFO ] 2020-07-16 14:01:37,911 [repositories/knora-test | c.o.t.m.MonitorRepositoryConnection] Incoming update:
+PREFIX luc: <http://www.ontotext.com/owlim/lucene#>
+INSERT DATA { luc:fullTextSearchIndex luc:updateIndex _:b1 . }
+                    

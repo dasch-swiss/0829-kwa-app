@@ -1,0 +1,155 @@
+<div style="display: none">
+    <ng-template #myTemplateRef >
+        {{ inputInformation.PREFIXES.allPrefixed }}
+
+        CONSTRUCT {{ '{' }}
+        ?textconcept knora-api:isMainResource true;
+            walser:hasTitle ?conceptTitle;
+            walser:hasKwaConceptId ?conceptId.
+
+		?textexpression walser:hasTitle ?title ;
+		    walser:hasIncipit ?incipit ;
+		    walser:isTextconceptInstance ?textconcept;
+        	walser:standoffResourceTextResourceReference ?textmanifest .
+
+        ?textmanifest walser:hasKwaManifestId ?manifestId.
+
+        ?column walser:standoffResourceTextResourceReference ?textmanifest ;
+                walser:onSurface ?surface .
+
+        ?surface walser:partOfTextcarrier ?textcarrier.
+
+        ?textcarrier walser:hasName ?textcarrierName.
+
+
+        ?textcarrier walser:hasNumber ?issueNumber;
+                         walser:hasTitle ?tcTitle;
+                         walser:hasImprintedDate ?imprintedDate;
+                         walser:hasPublicationDate ?pubdate;
+
+
+        {{ '}' }}
+        WHERE
+        {{ '{' }}
+        ?textconcept walser:hasTitle ?conceptTitle;
+                     walser:hasKwaConceptId ?conceptId.
+
+		?textexpression a walser:Textexpression ;
+        	walser:hasTitle ?title ;
+        	walser:hasIncipit ?incipit ;
+        	walser:isTextconceptInstance ?textconcept;
+	        walser:standoffResourceTextResourceReference ?textmanifest .
+
+
+	      ?textmanifest walser:hasKwaManifestId ?manifestId.
+
+        ?column walser:standoffResourceTextResourceReference ?textmanifest ;
+                walser:onSurface ?surface .
+
+        ?surface walser:partOfTextcarrier ?textcarrier.
+
+        ?textcarrier walser:hasName ?textcarrierName.
+        
+        ?textcarrier walser:hasNumber ?issueNumber;
+        walser:hasTitle ?tcTitle;
+        walser:hasImprintedDate ?imprintedDate;
+        walser:hasPublicationDate ?pubdate;       
+        
+        {{ generateFilters() }}
+
+        {{ '}' }}
+        ORDER by ?conceptTitle
+
+        OFFSET {{ offset }}
+    </ng-template>
+
+    <div *ngTemplateOutlet="myTemplateRef" >
+
+    </div>
+</div>
+
+
+<div style="width:100%; margin-top: 20px; " >
+    <div style="margin: 0 auto; display: table;">
+
+        <h3 >KWA Findbuch </h3>
+        <form *ngFor="let row of filterRows; let i = index; ">
+
+            <mat-form-field >
+                <mat-label>Filter Name</mat-label>
+                <mat-select value="{{ row?.filter }}">
+                    <mat-option
+                        *ngFor="let filter of constants.filters"
+                        [value]="filter.value"
+                        (click)="updateDefinedFilterArray( 'filter', filter.value, i )" >
+                        {{ filter.viewValue }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field >
+                <mat-label>Operator</mat-label>
+                <mat-select value="{{ row?.displayed }}">
+                    <mat-option *ngFor="let operator of constants.operators.string"
+                                [value]="operator.operator"
+                                (click)="updateDefinedFilterArray( 'operator', operator.operator, i )">
+                        {{ operator?.displayed }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field >
+                <mat-label>Searchterm</mat-label>
+                <input #inputForm
+                    matInput value="{{row?.searchTerm }}"
+                    (keyup)="updateDefinedFilterArray( 'searchTerm', inputForm.value, i )">
+            </mat-form-field>
+
+            <button
+                mat-icon-button
+                *ngIf="filterRows.length > 1"
+                type="button"
+                (click)="filterRows.splice( i, 1 ) && chosenFilters.splice( i, 1 ) && updateUrlParams()">
+                <mat-icon>close</mat-icon>
+            </button>
+
+        </form>
+
+        <button
+            mat-button aria-label="Add filter"
+            (click)="filterRows.push( filterRows )">
+            <mat-icon>add</mat-icon>
+        </button>
+
+        <button mat-button style="float: right" (click)="performSearch()">
+            <mat-icon>search</mat-icon>
+        </button>
+
+    </div>
+
+    <mat-divider></mat-divider>
+
+    <mat-card style="width: 75%; margin: 0 auto; display: table; margin-top: 15px;"
+              *ngFor="let searchResult of searchResults; let i = index;">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"> {{ i }} </div>
+            <mat-card-title> {{ searchResult.title }} </mat-card-title>
+            <mat-card-subtitle> {{ searchResult.expressions[0].incipit }} </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p *ngFor="let expression of searchResult.expressions">
+                {{ expression.textcarrier.title}}, {{expression.textcarrier.number}},  {{expression.textcarrier.imprintedDate}}
+                <span *ngIf="expression.title != searchResult.title">&nbsp;('{{ expression.title }}')</span>
+                <span *ngIf="expression.incipit != searchResult.expressions[0].incipit">&nbsp;(icpt: '{{expression.incipit}}')</span>
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>Explore</button>
+            <button mat-button>Hide</button>
+        </mat-card-actions>
+    </mat-card>
+
+    <mat-spinner style=" margin: 0 auto; display: table; margin-top: 15px;"></mat-spinner>
+
+</div>
+
