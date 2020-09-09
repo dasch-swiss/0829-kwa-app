@@ -23,8 +23,9 @@
 
 
         ?textcarrier walser:hasNumber ?issueNumber;
-                         walser:hasTitle ?issueTitle;
-                         walser:hasImprintedDate ?imprintedDate.
+                         walser:hasTitle ?tcTitle;
+                         walser:hasImprintedDate ?imprintedDate;
+                         walser:hasPublicationDate ?pubdate;
 
 
         {{ '}' }}
@@ -48,14 +49,13 @@
         ?surface walser:partOfTextcarrier ?textcarrier.
 
         ?textcarrier walser:hasName ?textcarrierName.
-
-        OPTIONAL {{ '{' }}
+        
         ?textcarrier walser:hasNumber ?issueNumber;
-        walser:hasTitle ?issueTitle;
-        walser:hasImprintedDate ?imprintedDate.
-        {{ '}' }}
-
-        {{ firstExampleFilter }}
+        walser:hasTitle ?tcTitle;
+        walser:hasImprintedDate ?imprintedDate;
+        walser:hasPublicationDate ?pubdate;       
+        
+        {{ generateFilters() }}
 
         {{ '}' }}
         ORDER by ?conceptTitle

@@ -100,11 +100,30 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             this.filterRows[i] = {
                 searchTerm: this.chosenFilters[i].searchTerm,
                 filter: this.chosenFilters[i].filter,
-                displayed: this.chosenFilters[i].operator
+                displayed: this.chosenFilters[i].operator              
             };
         }
     }
 
+    
+    // generates the filter expression for the query
+    generateFilters() : String
+    {
+    	var filterString = "";
+    	
+         for (let filter of this.chosenFilters) {                     
+         	switch (filter.operator)
+         	{
+        	case 'contains': {filterString += `FILTER knora-api:matchText(?${filter.filter}, "${filter.searchTerm}").
+`;break;}
+			case '=': {filterString += `FILTER( ?${filter.filter} = "${filter.searchTerm}").
+`;break;}
+    		}
+    		}
+    	console.log(filterString);	
+    	return filterString;	
+    }
+    
 
     // maps a text expression.
     mapExpression(expression: any): any {
@@ -180,11 +199,14 @@ class inputInformation {
 class constants {
 
     filters = [
-        {value: 'title', viewValue: 'Title', type: 'string'},
-        {value: 'text', viewValue: 'Text', type: 'string'},
-        {value: 'date', viewValue: 'Date', type: 'date'}
+        {value: 'title', viewValue: 'Texttitel', type: 'string'},
+        {value: 'incipit', viewValue: 'incipit', type: 'string'},
+        {value: 'tcTitle', viewValue: 'Textträgertitel', type: 'string'},       
+        {value: 'pubdate', viewValue: 'Publikationsdatum', type: 'date'}
     ];
 
+    optionalFields = ['issueTitle', 'pubdate'];
+    
     operators = {
         string: [
             {
