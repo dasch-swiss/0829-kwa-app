@@ -1,6 +1,6 @@
 ## Findbuch design specification Phase 1
 
-### .1 Presentation of the Finddbuch as dynamic content queried from Knora
+### .1 Presentation of the Findbuch as dynamic content queried from Knora
 
 - The information of the findbuch is queried directly from Knora
 - If the input field is empty all resources are shown. (If nothing is entered in the search input field, the first 25 results are loaded) if the user scrolls down to the 25th result, the next 25 results are loaded
