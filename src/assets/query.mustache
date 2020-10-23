@@ -1,0 +1,59 @@
+CONSTRUCT {
+        ?textconcept knora-api:isMainResource true;
+            walser:hasTitle ?conceptTitle;
+            walser:hasKwaConceptId ?conceptId.
+
+		?textexpression walser:hasTitle ?title ;
+		    walser:hasIncipit ?incipit ;
+		    walser:isTextconceptInstance ?textconcept;
+        	walser:standoffResourceTextResourceReference ?textmanifest .
+
+        ?textmanifest walser:hasKwaManifestId ?manifestId.
+
+        ?column walser:standoffResourceTextResourceReference ?textmanifest ;
+                walser:onSurface ?surface .
+
+        ?surface walser:partOfTextcarrier ?textcarrier.
+
+        ?textcarrier walser:hasName ?textcarrierName.
+
+
+        ?textcarrier walser:hasNumber ?issueNumber;
+                         walser:hasTitle ?tcTitle;
+                         walser:hasImprintedDate ?imprintedDate;
+                         walser:hasPublicationDate ?pubdate;
+
+
+        }
+        WHERE
+        {
+        ?textconcept walser:hasTitle ?conceptTitle;
+                     walser:hasKwaConceptId ?conceptId.
+
+		?textexpression a walser:Textexpression ;
+        	walser:hasTitle ?title ;
+        	walser:hasIncipit ?incipit ;
+        	walser:isTextconceptInstance ?textconcept;
+	        walser:standoffResourceTextResourceReference ?textmanifest .
+
+
+	      ?textmanifest walser:hasKwaManifestId ?manifestId.
+
+        ?column walser:standoffResourceTextResourceReference ?textmanifest ;
+                walser:onSurface ?surface .
+
+        ?surface walser:partOfTextcarrier ?textcarrier.
+
+        ?textcarrier walser:hasName ?textcarrierName.
+        
+        ?textcarrier walser:hasNumber ?issueNumber;
+        walser:hasTitle ?tcTitle;
+        walser:hasImprintedDate ?imprintedDate;
+        walser:hasPublicationDate ?pubdate;       
+        
+        // filters go here
+        
+        }
+        ORDER by ?conceptTitle
+
+        OFFSET {{ offset }}

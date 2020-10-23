@@ -2,6 +2,10 @@ import {AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild} f
 import {GravsearchServiceService} from "../../services/gravsearch-service.service";
 import {map} from 'rxjs/operators';
 import {ActivatedRoute, Router} from "@angular/router";
+import { HttpClient } from "@angular/common/http";
+
+declare var require: any
+var Mustache = require('mustache')
 
 @Component({
     selector: 'kwa-search-root',
@@ -35,22 +39,31 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
     offset = 0;
     spinnerIsLoading = false;
     alreadyQueried = false;
-    @ViewChild('myTemplateRef') myTemplate;
+    template;
 
     constructor(
+    	private http: HttpClient,
         private gravsearchServiceService: GravsearchServiceService,
         private router: Router,
         private route: ActivatedRoute,
     ) {
     }
 
-    ngAfterViewInit() {
+
+    ngAfterViewInit() {        	
         this.sendGravSearchQuery();
     }
 
-    sendGravSearchQuery( concatenate?: boolean ) {
+    sendGravSearchQuery( concatenate?: boolean ) {    	    
         this.spinnerIsLoading = true;
-        this.gravsearchServiceService.sendGravsearchRequest( this.myTemplate.elementRef.nativeElement.nextSibling.data )
+        
+        this.http.get('assets/query.mustache', {responseType: 'text'})
+        .subscribe(data => {                        	
+        	this.template = data
+        	var template = this.template;
+        template = Mustache.render(template, this)
+        console.log(template);
+        this.gravsearchServiceService.sendGravsearchRequest( template )
             .pipe(
                 map((response) => {
                     console.log(response);
@@ -86,7 +99,10 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
                     console.log(error);
                     this.spinnerIsLoading = false;
                 }
-            );
+            );        	
+        });
+        
+        
     }
 
     ngOnInit(): void {
@@ -102,7 +118,7 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
                 filter: this.chosenFilters[i].filter,
                 displayed: this.chosenFilters[i].operator              
             };
-        }
+        }        
     }
 
     
