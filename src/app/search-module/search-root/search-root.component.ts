@@ -62,8 +62,8 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             console.log( data );
         	this.template = data;
         	var template = this.template;
-        // template = Mustache.render(template, this);
-        // console.log(template);
+        template = Mustache.render(template, this);
+        console.log(template);
         this.gravsearchServiceService.sendGravsearchRequest( data )
             .pipe(
                 map((response) => {
