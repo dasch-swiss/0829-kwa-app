@@ -4,8 +4,8 @@ import {map} from 'rxjs/operators';
 import {ActivatedRoute, Router} from "@angular/router";
 import { HttpClient } from "@angular/common/http";
 
-declare var require: any
-var Mustache = require('mustache')
+declare var require: any;
+var Mustache = require('mustache');
 
 @Component({
     selector: 'kwa-search-root',
@@ -50,20 +50,21 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
     }
 
 
-    ngAfterViewInit() {        	
+    ngAfterViewInit() {
         this.sendGravSearchQuery();
     }
 
-    sendGravSearchQuery( concatenate?: boolean ) {    	    
+    sendGravSearchQuery( concatenate?: boolean ) {
         this.spinnerIsLoading = true;
-        
+
         this.http.get('assets/query.mustache', {responseType: 'text'})
-        .subscribe(data => {                        	
-        	this.template = data
+        .subscribe(data => {
+            console.log( data );
+        	this.template = data;
         	var template = this.template;
-        template = Mustache.render(template, this)
-        console.log(template);
-        this.gravsearchServiceService.sendGravsearchRequest( template )
+        // template = Mustache.render(template, this);
+        // console.log(template);
+        this.gravsearchServiceService.sendGravsearchRequest( data )
             .pipe(
                 map((response) => {
                     console.log(response);
@@ -99,13 +100,22 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
                     console.log(error);
                     this.spinnerIsLoading = false;
                 }
-            );        	
+            );
         });
-        
-        
+
+
     }
 
     ngOnInit(): void {
+        let template = '{{#users}}\n' +
+            '{{.}}\n' +
+            '{{/users}}';
+        const inputData = {
+            users: ["Hans", "Fritz", "Geraldine"]
+        }
+        template = Mustache.render(template, inputData);
+        console.log(template);
+
         for (let param in this.route.snapshot.queryParams) {
             if (typeof +param === 'number') {
                 this.chosenFilters.push(JSON.parse(this.route.snapshot.queryParams[param]));
@@ -116,18 +126,18 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             this.filterRows[i] = {
                 searchTerm: this.chosenFilters[i].searchTerm,
                 filter: this.chosenFilters[i].filter,
-                displayed: this.chosenFilters[i].operator              
+                displayed: this.chosenFilters[i].operator
             };
-        }        
+        }
     }
 
-    
+
     // generates the filter expression for the query
     generateFilters() : String
     {
     	var filterString = "";
-    	
-         for (let filter of this.chosenFilters) {                     
+
+         for (let filter of this.chosenFilters) {
          	switch (filter.operator)
          	{
         	case 'contains': {filterString += `FILTER knora-api:matchText(?${filter.filter}, "${filter.searchTerm}").
@@ -136,10 +146,10 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
 `;break;}
     		}
     		}
-    	console.log(filterString);	
-    	return filterString;	
+    	console.log(filterString);
+    	return filterString;
     }
-    
+
 
     // maps a text expression.
     mapExpression(expression: any): any {
@@ -147,7 +157,7 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             title: expression['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
             incipit: expression['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString'],
             // here comes the fun part
-            textcarrier: 
+            textcarrier:
                  this.mapTextcarrier(expression['knora-api:linkValueHasSource']
                  ['kwa:standoffResourceTextResourceReferenceValue']
                  ['knora-api:linkValueHasTarget']
@@ -159,7 +169,7 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
                  ['knora-api:linkValueHasTarget'])
         }
     }
-    
+
     mapTextcarrier(textcarrier: any): any {
         return {
             imprintedDate: this.mapStringValueIfThere(textcarrier['kwa:hasImprintedDate']),
@@ -167,13 +177,13 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
             number: this.mapStringValueIfThere(textcarrier['kwa:hasNumber'])
         }
     }
-    
+
     // returns the string value of a value object if there, or an empty string if not.
     mapStringValueIfThere(valueObject)
     {
     	return valueObject ? valueObject['knora-api:valueAsString'] : '';
     }
-    
+
 
     updateDefinedFilterArray(key: string, value: string, index: number) {
         this.chosenFilters[index] = this.chosenFilters[index] ? this.chosenFilters[index] : {};
@@ -217,12 +227,12 @@ class constants {
     filters = [
         {value: 'title', viewValue: 'Texttitel', type: 'string'},
         {value: 'incipit', viewValue: 'incipit', type: 'string'},
-        {value: 'tcTitle', viewValue: 'Textträgertitel', type: 'string'},       
+        {value: 'tcTitle', viewValue: 'Textträgertitel', type: 'string'},
         {value: 'pubdate', viewValue: 'Publikationsdatum', type: 'date'}
     ];
 
     optionalFields = ['issueTitle', 'pubdate'];
-    
+
     operators = {
         string: [
             {

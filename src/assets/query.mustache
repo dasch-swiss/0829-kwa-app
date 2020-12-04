@@ -1,3 +1,6 @@
+PREFIX knora-api: <http://api.knora.org/ontology/knora-api/simple/v2#>
+PREFIX walser: <http://0.0.0.0:3333/ontology/0829/kwa/simple/v2#>
+
 CONSTRUCT {
         ?textconcept knora-api:isMainResource true;
             walser:hasTitle ?conceptTitle;
@@ -45,15 +48,11 @@ CONSTRUCT {
         ?surface walser:partOfTextcarrier ?textcarrier.
 
         ?textcarrier walser:hasName ?textcarrierName.
-        
+
         ?textcarrier walser:hasNumber ?issueNumber;
         walser:hasTitle ?tcTitle;
         walser:hasImprintedDate ?imprintedDate;
-        walser:hasPublicationDate ?pubdate;       
-        
-        // filters go here
-        
+        walser:hasPublicationDate ?pubdate;
+
         }
         ORDER by ?conceptTitle
-
-        OFFSET {{ offset }}
