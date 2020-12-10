@@ -15,7 +15,8 @@ import {MatDividerModule} from "@angular/material/divider";
 import {GravsearchServiceService} from "../services/gravsearch-service.service";
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {Mustache} from 'mustache'
+import {Mustache} from 'mustache';
+import { ParentComponent } from './parent/parent.component'
 
 
 const modules = [
@@ -31,12 +32,12 @@ const modules = [
 ];
 
 @NgModule({
-  declarations: [ SearchRootComponent ],
+  declarations: [ SearchRootComponent, ParentComponent ],
     imports: [
         [
             CommonModule,
             RouterModule.forChild([
-                {path: '', component: SearchRootComponent}
+                {path: '', component: ParentComponent}
             ])
         ].concat(modules),
         MatDividerModule

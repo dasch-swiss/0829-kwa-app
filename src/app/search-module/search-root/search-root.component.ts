@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 import {GravsearchServiceService} from "../../services/gravsearch-service.service";
 import {map} from 'rxjs/operators';
 import {ActivatedRoute, Router} from "@angular/router";
@@ -12,26 +12,22 @@ var Mustache = require('mustache');
     templateUrl: './search-root.component.html',
     styleUrls: ['./search-root.component.scss']
 })
-export class SearchRootComponent implements OnInit, AfterViewInit {
+export class SearchRootComponent implements OnInit {
+    @Input() queryTemplate: string;
+    @Input() queryInputData: any;
     @HostListener("window:scroll", ["$event"])
     onWindowScroll() {
-        //In chrome and some browser scroll is given to body tag
-        let pos = (document.documentElement.scrollTop || document.body.scrollTop) + document.documentElement.offsetHeight;
+        let pos = ( document.documentElement.scrollTop || document.body.scrollTop ) + document.documentElement.offsetHeight;
         let max = document.documentElement.scrollHeight;
-        // pos/max will give you the distance between scroll bottom and and bottom of screen in percentage.
-        // console.log('scroll', pos, max);
-        if( max - pos < 5 && !this.alreadyQueried )   {
-            // console.log( 'reached bottom' );
+        if ( max - pos < 5 && !this.alreadyQueried )   {
             this.alreadyQueried = true;
             this.offset += 1;
-            setTimeout(() => { // some time needed until template is rendered with updated variables
+            setTimeout(() => {
                 this.sendGravSearchQuery( true );
             }, 500);
 
         }
     }
-    constants = new constants();
-    inputInformation = new inputInformation();
     filterRows = Array<any>(1);
     chosenFilters = [];
     searchResults = [];
@@ -50,29 +46,30 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
     }
 
 
-    ngAfterViewInit() {
-        this.sendGravSearchQuery();
-    }
+    // ngAfterViewInit() {
+    //     this.sendGravSearchQuery();
+    // }
 
     sendGravSearchQuery( concatenate?: boolean ) {
         this.spinnerIsLoading = true;
-
-        this.http.get('assets/query.mustache', {responseType: 'text'})
-        .subscribe(data => {
-            console.log( data );
-        	this.template = data;
-        	var template = this.template;
-        template = Mustache.render(template, this);
-        console.log(template);
-        this.gravsearchServiceService.sendGravsearchRequest( data )
+        let gravSearchQuery = this.escapeHtml(
+            Mustache.render(this.queryTemplate, this.queryInputData)
+        );
+        this.gravsearchServiceService.sendGravsearchRequest( gravSearchQuery )
             .pipe(
                 map((response) => {
                     console.log(response);
                     return (response.body['@graph'] as any).map(entry => {
                         // here the structure of the array is created from the response
                         return {
-                            title: entry['kwa:hasTitle']['knora-api:valueAsString'],
-                            conceptId: entry['kwa:hasKwaConceptId']['knora-api:valueAsString'],
+                            title: this.returnValueOfPathOfObject(
+                                entry,
+                                ['kwa:hasTitle', 'knora-api:valueAsString']
+                            ),
+                            conceptId: this.returnValueOfPathOfObject(
+                                entry,
+                                ['kwa:hasKwaConceptId', 'knora-api:valueAsString']
+                            ),
                             // expressions can be an array or an object or undefined!
                             // we want it to be an array in any case
                             expressions: (entry['knora-api:hasIncomingLinkValue'] ?
@@ -101,28 +98,18 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
                     this.spinnerIsLoading = false;
                 }
             );
-        });
-
 
     }
 
     ngOnInit(): void {
-        let template = '{{#users}}\n' +
-            '{{.}}\n' +
-            '{{/users}}';
-        const inputData = {
-            users: ["Hans", "Fritz", "Geraldine"]
-        }
-        template = Mustache.render(template, inputData);
-        console.log(template);
-
-        for (let param in this.route.snapshot.queryParams) {
-            if (typeof +param === 'number') {
-                this.chosenFilters.push(JSON.parse(this.route.snapshot.queryParams[param]));
+        for ( let param in this.route.snapshot.queryParams ) {
+            if ( typeof +param === 'number' ) {
+                this.chosenFilters.push(
+                    JSON.parse( this.route.snapshot.queryParams[param] )
+                );
             }
         }
-        console.log(this.chosenFilters);
-        for (let i = 0; i < this.chosenFilters.length; i++) {
+        for ( let i = 0; i < this.chosenFilters.length; i++ ) {
             this.filterRows[i] = {
                 searchTerm: this.chosenFilters[i].searchTerm,
                 filter: this.chosenFilters[i].filter,
@@ -131,8 +118,6 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
         }
     }
 
-
-    // generates the filter expression for the query
     generateFilters() : String
     {
     	var filterString = "";
@@ -150,23 +135,46 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
     	return filterString;
     }
 
+    returnValueOfPathOfObject( object: any, path: Array<string> ) {
+        // console.log( path, object, path.length );
+        if ( path.length > 1 ) {
+            const firstEntryOfArray = path.shift();
+            // console.log( object[ firstEntryOfArray ], path );
+            return this.returnValueOfPathOfObject( object[ firstEntryOfArray ], path );
+        } else {
+            // console.log( object[ path[ 0 ] ] );
+            return object[ path[ 0 ] ];
+        }
+    }
 
     // maps a text expression.
     mapExpression(expression: any): any {
         return {
-            title: expression['knora-api:linkValueHasSource']['kwa:hasTitle']['knora-api:valueAsString'],
-            incipit: expression['knora-api:linkValueHasSource']['kwa:hasIncipit']['knora-api:valueAsString'],
-            // here comes the fun part
+            title: this.returnValueOfPathOfObject(
+                expression,
+                this.queryInputData.responseToResultCardMapping.titlePath
+            ),
+            incipit: this.returnValueOfPathOfObject(
+                expression,
+                this.queryInputData.responseToResultCardMapping.incipitPath
+            ),
             textcarrier:
-                 this.mapTextcarrier(expression['knora-api:linkValueHasSource']
-                 ['kwa:standoffResourceTextResourceReferenceValue']
-                 ['knora-api:linkValueHasTarget']
-                 ['knora-api:hasIncomingLinkValue']
-                 ['knora-api:linkValueHasSource']
-                 ['kwa:onSurfaceValue']
-                 ['knora-api:linkValueHasTarget']
-                 ['kwa:partOfTextcarrierValue']
-                 ['knora-api:linkValueHasTarget'])
+                 this.mapTextcarrier(
+                     this.returnValueOfPathOfObject(
+                         expression,
+                         [
+                             'knora-api:linkValueHasSource',
+                             'kwa:standoffResourceTextResourceReferenceValue',
+                             'knora-api:linkValueHasTarget',
+                             'knora-api:hasIncomingLinkValue',
+                             'knora-api:linkValueHasSource',
+                             'kwa:onSurfaceValue',
+                             'knora-api:linkValueHasTarget',
+                             'kwa:partOfTextcarrierValue',
+                             'knora-api:linkValueHasTarget'
+                         ]
+                     )
+                 )
         }
     }
 
@@ -187,7 +195,6 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
 
     updateDefinedFilterArray(key: string, value: string, index: number) {
         this.chosenFilters[index] = this.chosenFilters[index] ? this.chosenFilters[index] : {};
-        console.log(value);
         this.chosenFilters[index][key] = value;
         console.log(this.chosenFilters);
         this.updateUrlParams();
@@ -204,55 +211,26 @@ export class SearchRootComponent implements OnInit, AfterViewInit {
     }
 
     performSearch() {
-        this.firstExampleFilter = '\t   FILTER knora-api:match(?title, \'Schnee\').\n' +
-            '\t   OPTIONAL\n' +
-            '\t   {\n' +
-            '\t    FILTER (?issueTitle = \'Prager Tagblatt\').' +
-            '\t   }\n';
-        setTimeout(() => { // some time needed until template is rendered with updated variables
-            this.sendGravSearchQuery();
-        }, 500);
+        // this.firstExampleFilter = '\t   FILTER knora-api:match(?title, \'Schnee\').\n' +
+        //     '\t   OPTIONAL\n' +
+        //     '\t   {\n' +
+        //     '\t    FILTER (?issueTitle = \'Prager Tagblatt\').' +
+        //     '\t   }\n';
+        // console.log( this.queryInputData, this.queryTemplate, this.chosenFilters );
+        const filters = {
+            filters: this.chosenFilters
+        };
+        const queryUpdatedWithFilters = Mustache.render(this.queryTemplate, filters);
+        // console.log( queryUpdatedWithFilters );
+        this.sendGravSearchQuery();
     }
-}
-
-class inputInformation {
-    PREFIXES = {
-        allPrefixed: 'PREFIX knora-api: <http://api.knora.org/ontology/knora-api/simple/v2#>\n' +
-            '        PREFIX walser: <http://0.0.0.0:3333/ontology/0829/kwa/simple/v2#>'
-    };
-}
-
-class constants {
-
-    filters = [
-        {value: 'title', viewValue: 'Texttitel', type: 'string'},
-        {value: 'incipit', viewValue: 'incipit', type: 'string'},
-        {value: 'tcTitle', viewValue: 'Textträgertitel', type: 'string'},
-        {value: 'pubdate', viewValue: 'Publikationsdatum', type: 'date'}
-    ];
-
-    optionalFields = ['issueTitle', 'pubdate'];
-
-    operators = {
-        string: [
-            {
-                displayed: 'contains',
-                operator: 'contains'
-            },
-            {
-                displayed: 'equals',
-                operator: '='
-            }
-        ],
-        date: [
-            {
-                displayed: 'published after',
-                operator: '<'
-            },
-            {
-                displayed: 'published before',
-                operator: '>'
-            }
-        ]
-    };
+    escapeHtml(unsafe: string) {
+        return unsafe
+            .split( "&amp;").join( '&' )
+            .split("&lt;").join( '<' )
+            .split( "&gt;").join( '>' )
+            .split( "&quot;").join( '"' )
+            .split( "&#039;").join( '\'' )
+            .split('&#x2F;').join( '/' );
+    }
 }

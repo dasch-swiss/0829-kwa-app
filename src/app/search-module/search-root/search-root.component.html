@@ -10,7 +10,7 @@
                 <mat-label>Filter Name</mat-label>
                 <mat-select value="{{ row?.filter }}">
                     <mat-option
-                        *ngFor="let filter of constants.filters"
+                        *ngFor="let filter of queryInputData.filterVariables.filters"
                         [value]="filter.value"
                         (click)="updateDefinedFilterArray( 'filter', filter.value, i )" >
                         {{ filter.viewValue }}
@@ -21,7 +21,7 @@
             <mat-form-field >
                 <mat-label>Operator</mat-label>
                 <mat-select value="{{ row?.displayed }}">
-                    <mat-option *ngFor="let operator of constants.operators.string"
+                    <mat-option *ngFor="let operator of queryInputData.filterVariables.operators.string"
                                 [value]="operator.operator"
                                 (click)="updateDefinedFilterArray( 'operator', operator.operator, i )">
                         {{ operator?.displayed }}
@@ -80,7 +80,7 @@
         </mat-card-actions>
     </mat-card>
 
-    <mat-spinner style=" margin: 0 auto; display: table; margin-top: 15px;"></mat-spinner>
+    <mat-spinner *ngIf="spinnerIsLoading" style=" margin: 0 auto; display: table; margin-top: 15px;"></mat-spinner>
 
 </div>
 

@@ -9,7 +9,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {HttpClientModule, HTTP_INTERCEPTORS, HttpClient} from '@angular/common/http';
 
-
 const modules = [
     BrowserModule,
     AppRoutingModule,
